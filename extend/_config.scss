@@ -1,0 +1,98 @@
+//--- Basic Colors Palette
+//  | --> Primary Color
+$primaryColor                               : #73305b;
+
+//  | --> Default Text Color
+$defaultTextColor                           : #424242;
+
+//  | --> Default Link Color
+$defaultLinkColor                           : #B81E80;
+
+//  | --> Default Background Color
+$defaultBgColor                             : #f6f6f6;
+
+//  | --> Footer Text Color
+$footerTextColor                            : #FFF;
+
+//  | --> Footer Link Color
+$footerLinkColor                            : #ad6392;
+
+//  | --> Footer Background Color
+$footerBgColor                              : #1b181f;
+
+$color-text                              : #333;
+
+$border-color                              : #ddd;
+
+
+
+//--- Major Sets & Core Variables
+//  | --> Bootstrap Color Palette (Primary, Default,
+//        Danger, Warning, Info, Success)
+$palettePrimaryText                         : #FFF;
+$palettePrimaryAccent                       : $primaryColor;
+$paletteDefaultText                         : $defaultTextColor;
+$paletteDefaultAccent                       : #FFF;
+$paletteDangerText                          : #FFF;
+$paletteDangerAccent                        : #F34A4A;
+$paletteWarningText                         : #FFF;
+$paletteWarningAccent                       : #f77d2d;
+$paletteInfoText                            : #FFF;
+// $paletteInfoAccent                          : #2db7f7;
+$paletteInfoAccent                          : #6e3ebc;
+$paletteSuccessText                         : #FFF;
+$paletteSuccessAccent                       : #45e08a;
+
+//  | --> Colors Palette
+$palette                                    : (
+                                                primary : ($palettePrimaryText, $palettePrimaryAccent),
+                                                light   : ($paletteDefaultText, $paletteDefaultAccent),
+                                                gray    : ($paletteDefaultAccent, lighten($paletteDefaultText, 40%)),
+                                                dark    : ($paletteDefaultAccent, $paletteDefaultText),
+                                                danger  : ($paletteDangerText, $paletteDangerAccent),
+                                                warning : ($paletteWarningText, $paletteWarningAccent),
+                                                info    : ($paletteInfoText, $paletteInfoAccent),
+                                                success : ($paletteSuccessText, $paletteSuccessAccent),
+                                              );
+
+//  | --> Helpers Colors Palette
+$helpers-colors                             : (
+                                                silver    : #bfc4c7,
+                                                gold      : #ffdb27,
+                                                light     : #FFF,
+                                                lightgray : #F0F0F0,
+                                                midgray   : #E0E0E0,
+                                                gray      : #B8B8B8,
+                                                darkgray  : #858585,
+                                                dark      : #232323,
+                                                primary   : $primaryColor
+                                              );
+
+//  | --> EM Base Value
+$em-base                                    : 16px;
+
+
+
+
+//--- Major Sets & Core Variables
+//  | --> Responsive Configuration
+$small-range                                : (0em, 40em);       ///* 0, 640px */
+$medium-range                               : (40.063em, 60em);  ///* 641px, 960px */
+$large-range                                : (60.063em, 90em);  ///* 961px, 1440px */
+$xlarge-range                               : (90.063em, 120em); ///* 1441px, 1920px */
+$xxlarge-range                              : (120.063em);       ///* 1921px */
+
+//   -> Defining media queries
+$screen                                     : "only screen" !default;
+$landscape                                  : "#{$screen} and (orientation: landscape)" !default;
+$portrait                                   : "#{$screen} and (orientation: portrait)" !default;
+$small-up                                   : $screen !default;
+
+
+//--- Bootstrap Overrides
+$brand-primary : $primaryColor;
+$brand-danger  : $paletteDangerAccent;
+$brand-warning : $paletteWarningAccent;
+$brand-info    : $paletteInfoAccent;
+$brand-success : $paletteSuccessAccent;
+

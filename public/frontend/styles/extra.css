@@ -1,0 +1,285 @@
+.adverts img
+{
+	border: 1px solid #c0c0c1;
+	padding: 2px;
+}
+.adv-banner a
+{
+	display: block;
+	text-align: center;
+}
+.adv-banner img
+{
+	max-height: 90px;
+	max-width: 729px;
+	margin: 20px 0 0 0;
+}
+.adv-box img
+{
+	max-height: 260px;
+	max-width: 260px;
+	margin: 0px 0 0 0;
+}
+
+/*div.container.adverts.adv-banner > a > img*/
+
+.truncate-145
+{
+  width: 145px !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: inline-block !important;
+}
+.truncate-130
+{
+  width: 130px !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: inline-block !important;
+}
+
+/*Hello Gemy Please leave this*/
+.offers .offer-card .card-meta .btn.btn-primary.btn-link,
+.user-cards .user-card .card-meta .btn.btn-primary.btn-link,
+.truncate-2lines
+{
+  height: 30px;
+  overflow: hidden;
+}
+/*services calendar page*/
+.fc-event, .fc-event-dot
+{
+	background-color: #73305b !important;
+	color: #fff !important;
+}
+.fc-event
+{
+	border: transparent !important;
+}
+
+.inbox .inbox-menu ul {
+	margin-top: 30px;
+	padding: 0;
+	list-style: none
+}
+
+.inbox .inbox-menu ul li {
+	height: 30px;
+	padding: 5px 15px;
+	position: relative
+}
+
+.inbox .inbox-menu ul li:hover,
+.inbox .inbox-menu ul li.active {
+	background: #e4e5e6
+}
+
+.inbox .inbox-menu ul li.title {
+	margin: 20px 0 -5px 0;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #d1d4d7
+}
+
+.inbox .inbox-menu ul li.title:hover {
+	background: 0 0
+}
+
+
+.inbox .inbox-menu ul li a {
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	color: #3d3f42
+}
+
+.inbox .inbox-menu ul li a i {
+	margin-right: 10px
+}
+
+.inbox .inbox-menu ul li a .label {
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	display: block;
+	min-width: 14px;
+	height: 14px;
+	padding: 2px
+}
+
+.nav-tabs .glyphicon:not(.no-margin) { margin-left:10px; }
+.tab-pane .list-group-item:first-child {border-top-right-radius: 0px;border-top-left-radius: 0px;}
+.tab-pane .list-group-item:last-child {border-bottom-right-radius: 0px;border-bottom-left-radius: 0px;}
+.tab-pane .list-group .glyphicon { margin-left:5px; }
+.tab-pane .list-group .glyphicon:hover { color:#FFBC00; }
+a.list-group-item.read { color: #222;background-color: #F3F3F3; }
+.badg{float: left;}
+
+
+
+
+
+/*Content Container*/
+.content-container {
+	background-color:#fff;
+	padding:35px 20px;
+	margin-bottom:20px;
+}
+
+
+ul.mail-list{
+	padding:0;
+	margin:0;
+	list-style:none;
+	margin-top:30px;
+}
+ul.mail-list li a{
+	display:block;
+	border-bottom:1px dotted #CFCFCF;
+	padding:20px;
+	text-decoration:none;
+}
+ul.mail-list li:last-child a{
+	border-bottom:none;
+}
+
+ul.mail-list li span{
+	display:block;
+}
+
+.message-content{
+	word-wrap: break-word;
+}
+
+/*fire fix fix's*/
+/*fix footer*/
+.landing-footer
+{
+	width: 100%;
+}
+
+
+/*fix sizes*/
+.medium-avatar
+{
+	max-width: 100px;
+	max-height: 100px;
+	border-radius: 0;
+}
+.mini-avatar
+{
+	max-width: 85px;
+	max-height: 85px;
+	border-radius: 5%;
+}
+
+.xmini-avatar
+{
+	max-width: 40px;
+	max-height: 40px;
+	border-radius: 20%;
+}
+
+.user-card .card-img img
+{
+	/*min-width: 170px !important;*/
+}
+
+.card-img a img.img-responsive {
+    max-height: 140px;
+}
+
+
+.offers .offer-card .card-meta .btn.btn-primary.btn-link, .user-cards .user-card .card-meta .btn.btn-primary.btn-link
+{
+	/*margin-right: 0px !important;*/
+}
+
+.opacity-2
+{
+	opacity: 0.6;
+}
+
+.opacity-2:hover
+{
+	opacity: 1;
+}
+
+
+.pagination > li:last-child > a, .pagination > li:last-child > span,
+.pagination > li:first-child > a, .pagination > li:first-child > span{
+	direction: initial;
+}
+
+.thumbnail .caption{
+	word-wrap: break-word;
+}
+.slider-div{
+	width:100%;
+}
+
+
+
+
+/*-- Bootstrap Override Style --*/
+
+
+/*-- Content Style --*/
+.post-footer-option li{
+	float:left;
+	margin-right:50px;
+	padding-bottom:15px;
+}
+
+.post-footer-option li a{
+	color:#AFB4BD;
+	font-weight:500;
+	font-size:1.3rem;
+}
+
+.photo-profile{
+	border:1px solid #DDD;
+}
+
+.anchor-username h4{
+	font-weight:bold;
+}
+
+.anchor-time{
+	color:#ADB2BB;
+	font-size:1.2rem;
+}
+
+.post-footer-comment-wrapper{
+	background-color:#F6F7F8;
+}
+
+.views{
+	margin-right: 10px;
+}
+
+.invoice-box table tr.top table td.details{
+	float: right;
+}
+
+.log_resolution
+{
+	width: 80px;
+}
+
+/* CSS for high-resolution devices */
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+	.log_resolution {
+		padding-top: 0px;
+		width: 80px;
+	}
+}
+.mapInfoBox p,
+.mapInfoBox img{
+	width: 350px;
+	max-height: 100px;
+}

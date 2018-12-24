@@ -1,0 +1,156 @@
+// Starlight [Shoot] Animation
+@keyframes shoot {
+  0% {
+    opacity: 1;
+    transform: translate(500px, -500px);
+  }
+  40% {
+    opacity: .6;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-500px, 500px);
+  }
+}
+
+// Animated Separator - Horizontal
+@keyframes animatedSeparatorHorizontal {
+  0% {
+    opacity: 0;
+    transform: translateX(200%);
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+    transform: translateX(-100%);
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-400%);
+  }
+}
+
+// Page Loader - Outer Border
+// @keyframes pageLoaderBorder {
+//   0%, 100% {
+//     border-color: lighten(invert($defaultTextColor), 20%);
+//   }
+//   50% {
+//     border-color: lighten($defaultTextColor, 40%);
+//   }
+// }
+
+
+// Page Loader - Brand
+// @keyframes pageLoaderBrand {
+//   0%, 100% {
+//     opacity: 0;
+//     filter: grayscale(0%);
+//   }
+//   50% {
+//     opacity: 1;
+//     filter: grayscale(100%);
+//   }
+// }
+
+
+// Fold Scroll Down Pointer
+@keyframes foldScrollDownPointer {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+
+
+// Page Loader - Dot Center
+// @keyframes pageLoaderDotCenter {
+//   0%  {
+//     transform: rotate(0deg) translateX(5px) translateY(54px) rotate(0deg) scale(1);
+//   }
+//   25%  {
+//     transform: rotate(90deg) translateX(5px) translateY(54px) rotate(-90deg) scale(.75);
+//   }
+//   50%  {
+//     // opacity: 0;
+//     transform: rotate(180deg) translateX(5px) translateY(54px) rotate(-180deg) scale(.60);
+//   }
+//   75%  {
+//     transform: rotate(270deg) translateX(5px) translateY(54px) rotate(-270deg) scale(.75);
+//   }
+//   100%  {
+//     transform: rotate(360deg) translateX(5px) translateY(54px) rotate(-360deg) scale(1);
+//   }
+// }
+
+
+
+// Page Loader - Dot Inner
+// @keyframes pageLoaderDotInner {
+//   0%  {
+//     transform: rotate(0deg) translateX(5px) translateY(50px) rotate(0deg) scale(1);
+//   }
+//   25%  {
+//     transform: rotate(90deg) translateX(5px) translateY(50px) rotate(-90deg) scale(.75);
+//   }
+//   50%  {
+//     transform: rotate(180deg) translateX(5px) translateY(50px) rotate(-180deg) scale(.60);
+//   }
+//   75%  {
+//     transform: rotate(270deg) translateX(5px) translateY(50px) rotate(-270deg) scale(.75);
+//   }
+//   100%  {
+//     transform: rotate(360deg) translateX(5px) translateY(50px) rotate(-360deg) scale(1);
+//   }
+// }
+
+
+
+// Page Loader - Dot Outer
+// @keyframes pageLoaderDotOuter {
+//   0%  {
+//     transform: rotate(0deg) translateX(5px) translateY(110px) rotate(0deg) scale(1);
+//   }
+//   25%  {
+//     transform: rotate(90deg) translateX(5px) translateY(110px) rotate(-90deg) scale(.75);
+//   }
+//   50%  {
+//     transform: rotate(180deg) translateX(5px) translateY(110px) rotate(-180deg) scale(.60);
+//   }
+//   75%  {
+//     transform: rotate(270deg) translateX(5px) translateY(110px) rotate(-270deg) scale(.75);
+//   }
+//   100%  {
+//     transform: rotate(360deg) translateX(5px) translateY(110px) rotate(-360deg) scale(1);
+//   }
+// }
+
+
+
+// Pulse With Box-Shadow
+@keyframes pulseBox {
+  0% {
+    box-shadow: 0 0 0 0 rgba(204,169,44, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}

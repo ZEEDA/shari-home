@@ -1,0 +1,119 @@
+//--- ../Fonts
+///
+///
+
+
+//  | --> Support Classes for "Simple Line Icons"
+.font-sli {
+  font-family: 'simple-line-icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+//  | --> JF Flat
+$font-jfflat : 'Roboto', 'JF Flat', sans-serif;
+
+
+//      | --> Declaration
+@font-face {
+    font-family: 'JF Flat';
+    font-weight: normal;
+    font-style: normal;
+    src: url($icon-font-path + 'jfflat/JF-Flat-regular.eot');
+    src: url($icon-font-path + 'jfflat/JF-Flat-regular.eot?#iefix') format('embedded-opentype'),
+         url($icon-font-path + 'jfflat/JF-Flat-regular.svg#JF Flat') format('svg'),
+         url($icon-font-path + 'jfflat/JF-Flat-regular.woff') format('woff'),
+         url($icon-font-path + 'jfflat/JF-Flat-regular.ttf') format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'JF Flat';
+    font-weight: 100;
+    font-style: normal;
+    src: url($icon-font-path + 'jfflat/JF-Flat-light.eot');
+    src: url($icon-font-path + 'jfflat/JF-Flat-light.eot?#iefix') format('embedded-opentype'),
+         url($icon-font-path + 'jfflat/JF-Flat-light.svg#JF Flat') format('svg'),
+         url($icon-font-path + 'jfflat/JF-Flat-light.woff') format('woff'),
+         url($icon-font-path + 'jfflat/JF-Flat-light.ttf') format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'JF Flat';
+    font-weight: 600;
+    font-style: normal;
+    src: url($icon-font-path + 'jfflat/JF-Flat-medium.eot');
+    src: url($icon-font-path + 'jfflat/JF-Flat-medium.eot?#iefix') format('embedded-opentype'),
+         url($icon-font-path + 'jfflat/JF-Flat-medium.svg#JF Flat') format('svg'),
+         url($icon-font-path + 'jfflat/JF-Flat-medium.woff') format('woff'),
+         url($icon-font-path + 'jfflat/JF-Flat-medium.ttf') format('truetype');
+    font-display: swap;
+}
+
+
+//      | --> Styling
+.font-jfflat {
+  font-family: $font-jfflat;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  @extend .font-jfflat;
+}
+
+h1, h2{
+  line-height: 3rem;
+}
+
+
+//  | --> Droid Arabic Kufi
+$font-droidkufi : 'Roboto', 'Droid Arabic Kufi', 'JF Flat', sans-serif;
+
+
+//      | --> Declaration
+@font-face {
+  font-family: 'Droid Arabic Kufi';
+  font-style: normal;
+  font-weight: 400;
+  src: url($icon-font-path + 'droidkufi/DroidKufi-Regular.eot');
+  src: url($icon-font-path + 'droidkufi/DroidKufi-Regular.eot?#iefix') format('embedded-opentype'),
+       url($icon-font-path + 'droidkufi/DroidKufi-Regular.woff2') format('woff2'),
+       url($icon-font-path + 'droidkufi/DroidKufi-Regular.woff') format('woff'),
+       url($icon-font-path + 'droidkufi/DroidKufi-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Droid Arabic Kufi';
+  font-style: normal;
+  font-weight: 700;
+  src: url($icon-font-path + 'droidkufi/DroidKufi-Bold.eot');
+  src: url($icon-font-path + 'droidkufi/DroidKufi-Bold.eot?#iefix') format('embedded-opentype'),
+       url($icon-font-path + 'droidkufi/DroidKufi-Bold.woff2') format('woff2'),
+       url($icon-font-path + 'droidkufi/DroidKufi-Bold.woff') format('woff'),
+       url($icon-font-path + 'droidkufi/DroidKufi-Bold.ttf') format('truetype');
+  font-display: swap;
+  }
+
+
+//      | --> Styling
+.font-droidkufi {
+  font-family: $font-droidkufi;
+}
+
+a, p, .btn, .tooltip {
+  @extend .font-droidkufi;
+}
+
+.tooltip-inner {
+  padding: 6px 8px;
+  font-weight: bold;
+}
+
+.btn {
+  font-weight: 700;
+}

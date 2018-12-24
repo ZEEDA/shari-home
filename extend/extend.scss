@@ -1,0 +1,10 @@
+$icon-font-path : './frontend/fonts/';
+$images-path    : './frontend/images/';
+
+@import "_config";
+@import "_fonts";
+@import "_functions";
+@import "_animations";
+@import "_responsive";
+
+@import "new-home/_newHome";
