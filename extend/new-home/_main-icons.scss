@@ -26,14 +26,14 @@
 				background-repeat: no-repeat;
 				background-position: center;
 				&.icon_people{
-					background-image: url('/public/frontend/images/account-group.svg');
+					background-image: url('../public/frontend/images/account-group.svg');
 					width: 60px;
 					height: 80px;
 					display: block;
 					margin: auto;
 				}
 				&.icon_gavel{
-					background-image: url('/public/frontend/images/gavel.svg');
+					background-image: url('../public/frontend/images/gavel.svg');
 					width: 50px;
 					height: 80px;
 					display: block;
