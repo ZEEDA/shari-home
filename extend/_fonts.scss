@@ -105,10 +105,6 @@ $font-droidkufi : 'Roboto', 'Droid Arabic Kufi', 'JF Flat', sans-serif;
   font-family: $font-droidkufi;
 }
 
-a, p, .btn, .tooltip {
-  @extend .font-droidkufi;
-}
-
 .tooltip-inner {
   padding: 6px 8px;
   font-weight: bold;

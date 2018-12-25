@@ -7778,9 +7778,6 @@ h1, h2 {
   font-display: swap;
 }
 
-.font-droidkufi, a, p, .btn, .tooltip {
-  font-family: "Roboto", "Droid Arabic Kufi", "JF Flat", sans-serif;
-}
 
 .tooltip-inner {
   padding: 6px 8px;
@@ -15050,55 +15047,6 @@ a.text-primary.bg-primary:hover, a.text-primary.bg-dark:hover, a.text-primary.bg
   opacity: .7;
 }
 
-.std-footer {
-  background-color: var(--primary, #650c44);
-}
-
-.std-footer .footer-brand-desc .brand-right:hover {
-  opacity: .5;
-}
-
-.std-footer .footer-brand-desc p {
-  font-size: 0.875em;
-}
-
-.std-footer .footer-nav .nav a {
-  color: #fff;
-  font-weight: bold;
-  background-color: transparent;
-}
-
-.std-footer .footer-nav .nav a:hover {
-  color: #ad6392;
-}
-
-.std-footer .tweets-list .tweet-item {
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  color: #FFF;
-  border-bottom: 1px solid #161616;
-}
-
-.std-footer .tweets-list .tweet-item p {
-  font-family: "Roboto", "JF Flat", sans-serif;
-  font-size: 0.875em;
-}
-
-.std-footer .tweets-list .tweet-item .tweet-time {
-  display: block;
-  padding: 5px 0;
-  font-size: 0.75em;
-  color: #bbbabc;
-  text-align: right;
-}
-
-.std-footer .tweets-list .tweet-item:last-child {
-  border-color: transparent;
-}
-
-.std-footer .footer-low {
-  border-top: 1px solid #141414;
-}
 
 .offscreen-nav {
   position: fixed;
@@ -16585,7 +16533,7 @@ clearfix:before, .section-title:before, clearfix:after, .section-title:after {
   top: 0;
   right: 0;
   z-index: 4;
-  background: url("/frontend/images/starfield.png");
+  background: url("./frontend/images/starfield.png");
   background-position: center;
   background-size: cover;
 }
@@ -16598,7 +16546,7 @@ clearfix:before, .section-title:before, clearfix:after, .section-title:after {
   top: 0;
   right: 0;
   z-index: 3;
-  background: url("/frontend/images/fri-img-1.png");
+  background: url("./frontend/images/fri-img-1.png");
   background-position: right center;
   background-repeat: no-repeat;
   border-radius: 15px;
@@ -16608,7 +16556,7 @@ clearfix:before, .section-title:before, clearfix:after, .section-title:after {
   position: absolute;
   width: 80px;
   height: 70px;
-  background-image: url("/frontend/images/logo-light.png");
+  background-image: url("./frontend/images/logo-light.png");
   opacity: 0.3;
   left: 15px;
   top: 0;
@@ -16748,7 +16696,7 @@ clearfix:before, .section-title:before, clearfix:after, .section-title:after {
     position: absolute;
     width: 70px;
     height: 50px;
-    background-image: url("/frontend/images/logo-light.png");
+    background-image: url("./frontend/images/logo-light.png");
     opacity: 0.8;
     left: 50%;
     top: auto;
@@ -17095,7 +17043,7 @@ clearfix:before, .section-title:before, clearfix:after, .section-title:after {
   height: 100%;
   top: 0;
   right: 0;
-  background: url("/frontend/images/starfield.png");
+  background: url("./frontend/images/starfield.png");
   background-position: center;
 }
 
@@ -17139,7 +17087,7 @@ footer:before {
   height: 100%;
   top: 0;
   right: 0;
-  background: url("/frontend/images/starfield.png");
+  background: url("./frontend/images/starfield.png");
   background-position: center;
 }
 
@@ -17196,11 +17144,11 @@ footer:before {
 }
 
 .stores-buttons .btn.btn-play .btn-img {
-  background-image: url("/frontend/images/google-play-badge.png");
+  background-image: url("./frontend/images/google-play-badge.png");
 }
 
 .stores-buttons .btn.btn-apple .btn-img {
-  background-image: url("/frontend/images/App_Store_Badge.svg");
+  background-image: url("./frontend/images/App_Store_Badge.svg");
 }
 
 @media (max-width: 485px) {

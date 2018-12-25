@@ -1,6 +1,51 @@
-main{
-    background-color: aqua;
-    h1{
-        font-size: 22px;
-    }
+.main-icons{
+	margin: 20px;
+	ul{
+		list-style: none;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+		li{
+		display: inline-block;
+		margin-left: 70px;
+		[icon-circle]{
+			width: 80px;
+			height: 80px;
+			display: block;
+			border-radius: 1000px;
+			background-color: var(--primary);
+				text-align: center;
+				margin-bottom: 10px;
+			span{
+				width: 100%;
+				height: 100%;
+				font-size: 60px;
+				color: #fff;
+				line-height: 80px;
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+				&.icon_people{
+					background-image: url('/public/frontend/images/account-group.svg');
+					width: 60px;
+					height: 80px;
+					display: block;
+					margin: auto;
+				}
+				&.icon_gavel{
+					background-image: url('/public/frontend/images/gavel.svg');
+					width: 50px;
+					height: 80px;
+					display: block;
+					margin: auto;
+				}
+			}
+		}
+		p{
+				font-size: 18px;
+				font-weight: 600;
+		}
+		}
+	}
 }
+

@@ -1,0 +1,115 @@
+// Standard Footer
+.std-footer {
+	background-color: var(--primary, #650c44);
+	padding: 30px 0 0!important;
+	&:before{
+		content: none;
+	}
+	.footer-brand-desc {
+		.log_resolution{
+			width: 87px;
+		}
+		.brand-right {
+
+			&:hover {
+				opacity: .5;
+			}
+		}
+
+		p {
+			font-size: 14px;
+			line-height: 24px;
+			font-weight: 400;
+			color: #BF9CB2;
+			margin-top: 20px;
+			margin-bottom: 0;
+			text-align: right;
+		}
+	}
+
+	.footer-nav {
+		h2{
+			font-size: 18px;
+			font-weight: 600;
+			margin-bottom: 30px;
+			color: #fff;
+		}
+		.nav {
+			margin: 0;
+			padding: 0;
+			a {
+				color: #BF9CB2;
+				font-weight: 400;
+				background-color: transparent;
+				padding: 5px 0;
+				&:hover {
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	.tweets-list {
+
+		.tweet-item {
+			margin-bottom: 20px;
+			padding-bottom: 20px;
+			color: $footerTextColor;
+			border-bottom: 1px solid desaturate(darken($footerBgColor, 2%), 20%);
+
+			p {
+				font-family: $font-jfflat;
+				font-size: em(14px);
+			}
+
+			.tweet-time {
+				display: block;
+				padding: 5px 0;
+				font-size: em(12px);
+				color: mix($footerTextColor, $footerBgColor, 70%);
+				text-align: right;
+			}
+
+			&:last-child {
+				border-color: transparent;
+			}
+		}
+	}
+	.app-widget{
+		h2{
+			font-size: 18px;
+			font-weight: 600;
+			margin-bottom: 30px;
+			color: #fff;
+		}
+		p{
+			font-size: 14px;
+			line-height: 24px;
+			font-weight: 400;
+			color: #BF9CB2;
+			margin-top: 20px;
+			margin-bottom: 0;
+			text-align: right;			
+		}
+		.stores-buttons {
+			.btn{
+				position: relative;
+				width: calc(50% - 15px);
+				margin-top: 15px;
+				.btn-img{
+					background-size: contain;
+				}
+			}
+		}
+	}
+	.footer-low {
+		background-color: var(--dark-primary, #4D0030);
+		color: #ABA2A7;
+		padding: 0;
+		margin: 0;
+		line-height: 58px;
+		text-align: center;
+		font-size: 14px;
+		margin-top: 30px;
+	}
+}
