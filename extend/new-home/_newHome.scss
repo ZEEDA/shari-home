@@ -11,5 +11,9 @@
     min-height: 300px;
 }
 @import "_header";
-@import "_main-icons";
+@import "_mainIcons";
+@import "_slides";
+@import "_homeContent";
 @import "_footer";
+
+@import "_swiper.scss";
