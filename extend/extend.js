@@ -33,15 +33,19 @@ var _INIT_SWIPPER_DEALS = function(){
                     slidesPerView: 5,
                     spaceBetween: 10,
                 },            
-                1024: {
-                slidesPerView: 4,
+                1200: {
+                slidesPerView: 5,
                 spaceBetween: 10,
+                },
+                992: {
+                    slidesPerView: 4,
+                    spaceBetween: 10,
                 },
                 768: {
                 slidesPerView: 3,
                 spaceBetween: 10,
                 },
-                640: {
+                560: {
                 slidesPerView: 2,
                 spaceBetween:10,
                 },
