@@ -19,7 +19,7 @@ var _INIT_SWIPPER_ONESLIDE = function(){
 } 
 
 var _INIT_SWIPPER_DEALS = function(){
-    $('.js_deals .swiper-container').each(function(){
+    $('.js_deals .swiper-container, .js_categories_icons .swiper-container').each(function(){
         var selector = $(this);
         var swiper = new Swiper(selector, {
             slidesPerView: 5,
@@ -58,7 +58,55 @@ var _INIT_SWIPPER_DEALS = function(){
     })
 }
 
+var _INIT_SWIPPER_Category = function(){
+    $('.js_category .swiper-container').each(function(){
+        var selector = $(this);
+        var swiper = new Swiper(selector, {
+            slidesPerView: 3,
+            spaceBetween: 50,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },        
+            breakpoints: {
+                4000: {
+                    slidesPerView: 4,
+                    spaceBetween: 10,
+                },            
+                1200: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+                },
+                992: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                768: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+                },
+                560: {
+                slidesPerView: 2,
+                spaceBetween:10,
+                },
+                320: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                }
+            }
+        });
+    })
+}
+var _TOGGLE_MAIN_SEARCH = function(){
+    var content = $('header .search-wrapper');
+    $('.js_mainSearchToggle').on('click', function(ev){
+        content.slideToggle(300);
+    });
+}
+
 jQuery(document).ready(function($){
     _INIT_SWIPPER_DEALS();
     _INIT_SWIPPER_ONESLIDE();
+    _INIT_SWIPPER_Category();
+    _TOGGLE_MAIN_SEARCH();
 });

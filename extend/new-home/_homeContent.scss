@@ -1,3 +1,6 @@
+body{
+    background-color: #fff!important;
+}
 .main-slider{
     margin: 0 0 30px;
     position: relative;
@@ -52,6 +55,8 @@ section{
     .material-icons{
       width: 100%;
       text-align: center;
+      font-size: 22px;
+      line-height: 30px;
     }
   }
 }
@@ -64,6 +69,7 @@ section{
 
 .product-item{
     position: relative;
+    width: 100%;
     .img{
         background-size: contain!important;
         background-color: #fff;
@@ -115,11 +121,6 @@ section{
     }
 }
 
-.deals-slider{
-    .swiper-container{
-        padding-top: 45px;
-    }   
-}
 
 .embed-responsive {
     position: relative;
@@ -160,4 +161,66 @@ section{
     height: 100%;
     border: 0;
    
+}
+
+.categories-icons{
+    .swiper-slide{
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 4px;
+        background-color: var(--header-bg, #650c44);
+        color: #fff;
+        cursor: pointer;
+        .icon{
+            color: #fff;
+            .material-icons{
+                font-size: 60px;
+            }
+        }
+        .title{
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+    .swiper-button-prev, .swiper-button-next{
+        color: #fff;
+    }
+}
+
+
+// ============
+// | featured
+// ============
+.deals-slider{
+    .swiper-container{
+        padding-top: 45px;
+    }   
+}
+
+.category{
+    margin-top: -30px;
+    .container{
+        padding-top: 20px;
+        padding-bottom: 15px; 
+        background-color: #F6F6F6;
+    }
+    .swiper-container{
+        padding-top: 30px;
+        .swiper-slide {
+            img{
+                width: 100%;
+            }
+            .img{
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        .js_oneSlide{
+            margin-left: -20px;
+        }
+    
+    }
 }
