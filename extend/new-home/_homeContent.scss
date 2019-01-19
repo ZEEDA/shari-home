@@ -21,6 +21,15 @@ body{
 }
 section{
     margin: 60px 0;
+    &.session-message{
+        margin: 0 auto;
+    }
+    @media (max-width: 769px) {
+        margin: 30px 0;
+        &.category{
+            margin-top: 0;
+        }
+    }
 }
 %clearfix{
   &:before,&:after{
@@ -43,7 +52,7 @@ section{
     line-height: 30px;
     &:before {
       content: none;
-    }    
+    }
   }
   .more-btn{
     float: left;
@@ -78,13 +87,42 @@ section{
     .item-content{
         padding: 6px;
         text-align: right;
-        .title{
+        h2{
+          &.title{
+            margin: 8px 0 16px!important;
+            // color: var(--secondary, #b50389);
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 26px;
+            height: 50px;
+          }
+        }
+        p{
+          &.title{
             font-size: 16px;
             font-weight: 400;
             line-height: 22px;
-
             height: 66px;
+          }
+        }
+        .title{
             overflow: hidden;
+        }
+        .time{
+          display: block;
+          font-size: 14px;
+          margin-top: 4px;
+          color: var(--text-light, #6F6F6F);
+        }
+        .city{
+          font-size: 14px;
+          display: block;
+          margin-bottom: 8px;
+          strong{
+            font-weight: 400;
+            // color: var(--text-dark, #333);
+          }
+          color: var(--text-light, #6F6F6F);
         }
         .prices{
             color: var(--secondary, #b50389);
@@ -102,7 +140,7 @@ section{
         }
     }
     .percent{
-        background-image: url('../public/frontend/images/deal.svg');
+        background-image: url('/frontend/images/deal.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -138,7 +176,7 @@ section{
 .res-img-wrapper{
     .img{
         @extend %res_img;
-    }    
+    }
 }
 %res_img{
     background-size: cover;
@@ -151,7 +189,7 @@ section{
     width: 100%;
     height: 100%;
     border: 0;
-} 
+}
 .embed-responsive .embed-responsive-item{
     position: absolute;
     top: 0;
@@ -160,7 +198,7 @@ section{
     width: 100%;
     height: 100%;
     border: 0;
-   
+
 }
 
 .categories-icons{
@@ -185,6 +223,31 @@ section{
     .swiper-button-prev, .swiper-button-next{
         color: #fff;
     }
+    @media (max-width: 769px) {
+        margin: 30px 0;
+        .swiper-slide{
+            flex-direction: column;
+            padding: 8px;
+            border-radius: 4px;
+            background-color: var(--header-bg, #650c44);
+            color: #fff;
+            cursor: pointer;
+            .icon{
+                color: #fff;
+                .material-icons{
+                    font-size: 26px;
+                }
+            }
+            .title{
+                font-size: 11px;
+                font-weight: 300;
+                white-space: nowrap;
+                display: block;
+                overflow: hidden;
+                margin-bottom: 0;
+            }
+        }
+    }
 }
 
 
@@ -194,14 +257,14 @@ section{
 .deals-slider{
     .swiper-container{
         padding-top: 45px;
-    }   
+    }
 }
 
 .category{
     margin-top: -30px;
     .container{
         padding-top: 20px;
-        padding-bottom: 15px; 
+        padding-bottom: 15px;
         background-color: #F6F6F6;
     }
     .swiper-container{
@@ -221,6 +284,6 @@ section{
         .js_oneSlide{
             margin-left: -20px;
         }
-    
+
     }
 }

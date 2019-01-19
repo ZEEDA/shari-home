@@ -169,6 +169,9 @@
     .material-icons{
       font-size: 40px;
     }
+    @media (max-width: 460px) {
+      display: none;
+    }
   }
   .swiper-button-prev.swiper-button-disabled,
   .swiper-button-next.swiper-button-disabled {
