@@ -21,44 +21,87 @@ header{
 	padding: 8px 0;
 	background-color: var(--header-bg, #650c44);
 	position: relative;
+	// min-height: 70px;
 	.logo-wrapper{
+		position: relative;
 		@media (max-width: 993px){
 			text-align: center;
 		}
 		.inline, .cart{
 			display: none;
 		}
+		.brand{
+			margin-right: 42px;
+			.log_resolution.block{
+				width: 60px!important;
+			}
+			// .log_resolution.inline{
+			// 	margin-right: 30px;
+			// }			
+		}
 		.block{
 			display: block;
 		}
+		.nav-toggle.main-nav{
+			color: #fff;
+			position: absolute;
+			width: auto;
+			height: 27px;
+			right: 15px;
+			top: 50%;
+			transform: translate(0, -50%);
+			margin: 0;
+			padding: 0;
+			// width: 26px;
+			// height: 72px;
+			// margin-left: 8px!important;
+			.icon-menu, span{
+					position: relative;
+					bottom: 0;
+			}
+			&:hover{
+					color: #fff;
+			}
+			@media (max-width: 993px){
+				right: auto;
+			}	
+			@media (max-width: 769px){
+				height: 20px;
+				right: 15px;
+			}						
+		}
+		.search-toggle{
+			color: #fff;
+			position: relative;
+			width: 26px;
+			// height: 72px;
+			margin-left: 16px!important;
+			.icon-menu, span{
+					position: absolute;
+					bottom: 0;
+			}
+			&:hover{
+					color: #fff;
+			}
+		}		
+		.search-toggle{
+			position: relative;
+			right: auto;
+			// left: 16px;
+		}
 	}
 
-	.nav-toggle.main-nav, .search-toggle{
-		color: #fff;
-		position: relative;
-		width: 26px;
-		height: 72px;
-		margin-left: 16px!important;
-		.icon-menu, span{
-				position: absolute;
-				bottom: 0;
-		}
-		&:hover{
-				color: #fff;
-		}
-	}
+
 	.search-toggle{display: none!important;}
 
 	.header-actions{
 		text-align: left;
-		margin-top: 18px;			
+		margin-top: 7px;			
 		a{
 			color: #fff!important;
 		}
 		@media (max-width: 993px){
 			text-align: center;
-		}
-		@media (max-width: 769px) {
 		}
 		@media (max-width: 769px){
 			.btn{
@@ -83,10 +126,12 @@ header{
 	}
 	.search-wrapper{
 		// border: 1px solid #f0f0f0;
-		height: 56px;
+		height: 54px;
 		border-radius: 8px; 
+		padding-top: 4px;
 		form{
 			.form-group{
+				margin: 0;
 				// @extend %clearfix;
 			}
 				.input{
@@ -203,17 +248,16 @@ header{
 		.brand{
 			overflow: hidden;
 			float: right;
-			margin-right: 8px;
-			// height: 30px;
+			margin-right: 34px!important;
 			padding-left: 62px;
 			position: relative;
-			// &:before{
-			// 	content: "شـاري";
-			// 	font-size: 22px;
-			// 	color: #fff;
-			// 	position: absolute;
-			// 	left: 0;
-			// }
+			&:before{
+				content: "شـاري";
+				font-size: 22px;
+				color: #fff;
+				position: absolute;
+				left: 0;
+			}			
 			.inline{
 				height: 30px;
 				width: auto;
@@ -530,7 +574,7 @@ nav+div{
 					float: right;
 					margin-right: 15px;
 					padding-left: 52px;
-					position: relative;
+					position: relative;					
 					.inline{
 						height: 26px;
 						width: auto;
