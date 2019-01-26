@@ -78,6 +78,7 @@ header{
 			margin-left: 16px!important;
 			.icon-menu, span{
 					position: absolute;
+					z-index: 10;
 					bottom: 0;
 			}
 			&:hover{
