@@ -302,24 +302,25 @@ section{
 }
 .z_store{
     h4{
-        min-height: 26px;
+        min-height: 29px;
         &:before, &:after{
             content: "";
             display: table;
             clear: both;
         }
         a{
+            color: var(--text-dark, #333);
             float: right;
-            line-height: 23px;
+            line-height: 26px;
         }
         .verified{
             float: right;
+            line-height: 13px;
             display: inline-block;
-            line-height: 21px;
-            margin-right: 4px;
+            margin-right: 8px;
             .material-icons{
-                font-size: 19px;
-                color: #16c054;
+                font-size: 24px;
+                color: var(--secondary, #b50389);
             }
         }
     }
