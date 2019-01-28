@@ -302,7 +302,7 @@ section{
 }
 .z_store{
     h4{
-        line-height: 26px;
+        min-height: 26px;
         &:before, &:after{
             content: "";
             display: table;
