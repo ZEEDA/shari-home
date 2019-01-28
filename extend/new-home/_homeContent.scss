@@ -300,3 +300,27 @@ section{
 
     }
 }
+.z_store{
+    h4{
+        line-height: 26px;
+        &:before, &:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        a{
+            float: right;
+            line-height: 23px;
+        }
+        .verified{
+            float: right;
+            display: inline-block;
+            line-height: 21px;
+            margin-right: 4px;
+            .material-icons{
+                font-size: 19px;
+                color: #16c054;
+            }
+        }
+    }
+}
