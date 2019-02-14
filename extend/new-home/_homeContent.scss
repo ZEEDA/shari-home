@@ -7,6 +7,9 @@ body{
     .swiper-container {
         width: 100%;
         height: calc(100% - 235px)!important;
+        @media (min-width: 993px) {
+            height: calc(100vh - 300px)!important;
+        }
     }
     .swiper-slide {
         text-align: center;
@@ -82,10 +85,18 @@ section{
     border-radius: 4px;
     background-color: #fff;
 }
+.product-tabs {
+    .nav-tabs{
+        background-color: #f6f6f6;
+    }
+}
 
+.product-title{
+    margin: 0;
+}
 .product-item{
     position: relative;
-    // width: 100%;
+    width: 100%;
     .img{
         background-size: contain!important;
         background-color: #fff;
@@ -110,7 +121,8 @@ section{
             font-size: 16px;
             font-weight: 600;
             line-height: 23px;
-            height: 66px;
+            height: 49px;
+            color: #424242;
           }
         }
         .title{
@@ -148,7 +160,7 @@ section{
         }
     }
     .percent{
-        background-image: url('../frontend/images/deal.svg');
+        background-image: url('/frontend/images/deal.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -309,7 +321,7 @@ section{
             clear: both;
         }
         a{
-            color: var(--text-dark, #333);
+            color: var(--text-dark, #424242)!important;
             float: right;
             line-height: 26px;
         }
@@ -324,4 +336,21 @@ section{
             }
         }
     }
+}
+
+.product-specs {
+    li {
+        border-bottom: 1px solid #F0F0F0;
+        .specs-label, .specs-value{
+            border: none;
+            p{
+                margin: 0;
+            }
+        }
+    }
+}
+.card-dp-4{
+    border: 1px solid #e0e0e0;
+    box-shadow: none;
+    border-radius: 2px!important;    
 }

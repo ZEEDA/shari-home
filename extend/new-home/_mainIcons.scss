@@ -26,14 +26,14 @@
 					background-repeat: no-repeat;
 					background-position: center;
 					&.icon_people{
-						background-image: url('../frontend/images/account-group.svg');
+						background-image: url('/frontend/images/account-group.svg');
 						width: 60px;
 						height: 80px;
 						display: block;
 						margin: auto;
 					}
 					&.icon_gavel{
-						background-image: url('../frontend/images/gavel.svg');
+						background-image: url('/frontend/images/gavel.svg');
 						width: 50px;
 						height: 80px;
 						display: block;
@@ -45,6 +45,7 @@
 				font-size: 18px;
 				font-weight: 600;
 				margin: 0;
+				color: #333;
 			}
 			&:last-child{
 				margin-left: 0;
