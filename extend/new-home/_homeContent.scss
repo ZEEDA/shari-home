@@ -457,6 +457,25 @@ section{
         border: 2px solid #f6f6f6;
         > li{
             float: right;
+            &.active > a {
+                color: var(--secondary, #b50389);
+                background-color: transparent;
+                border-width: 0 0 2px 0;
+                border-color: var(--secondary, #b50389);
+            }
+        }
+    }
+}
+.product-specs .specs-value{
+    color: var(--secondary, #b50389);
+}
+.btn{
+    &.btn-primary{
+        background-color: var(--secondary, #b50389);
+        &.btn-ghost {
+            color: var(--secondary, #b50389);
+            border-color: var(--secondary, #b50389);
+            background-color: transparent;
         }
     }
 }
