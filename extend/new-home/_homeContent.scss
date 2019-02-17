@@ -132,7 +132,7 @@ section{
           display: block;
           font-size: 14px;
           margin-top: 4px;
-          color: var(--text-light, #8F8F8F);
+          color: var(--text-light, #afafaf);
         }
         .city{
           font-size: 14px;
@@ -142,7 +142,7 @@ section{
             font-weight: 400;
             // color: var(--text-dark, #333);
           }
-          color: var(--text-light, #8F8F8F);
+          color: var(--text-light, #afafaf);
         }
         .prices{
             color: var(--secondary, #b50389);
@@ -360,4 +360,103 @@ section{
     border: 1px solid #e0e0e0;
     box-shadow: none;
     border-radius: 2px!important;    
+}
+
+.breadcrumb{
+    margin: 15px 0;
+    border-radius: 2px;
+    background-color: #f6f6f6;
+}
+#productImages {
+    a{
+        border: 1px solid #ddd;
+        img{
+            display: block;
+            margin: auto;
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 350px;
+        }
+    }
+}
+#productThumbs {
+    .thumbs-vr {
+        a {
+            border: 1px solid #ddd;
+            img{
+
+            }
+        }
+    }
+}
+.inner-prod-title{
+    margin: 15px 0;
+    padding-bottom: 15px;
+    h1{
+        margin: 0;
+        display: block;
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--secondary, #b50389);
+        line-height: 30px;
+    }
+
+}
+.inner-sub-title{
+    display: block;
+    margin-top: 4px;
+    span{
+        font-size: 12px!important;
+        font-weight: 400;
+        padding: 0;
+        margin-left: 4px;
+        &.label{
+            color: var(--text-light, #afafaf);
+        }
+        &.value{
+            color: var(--text-dark, #afafaf);
+        }
+        a{
+            color: var(--secondary, #b50389);      
+        }
+    }
+}
+.inner-prod-price{
+    margin: 15px 0;
+    padding-bottom: 15px;
+    display: block;
+
+    &:after{
+        content: "";
+        display: block;
+        border-bottom: 1px solid #ddd;
+        margin-top: 15px;
+        max-width: 80%;
+    }
+    .price-item{
+        span{
+            margin: 0;
+            font-weight: 600;
+            color: var(--secondary, #b50389);
+            line-height: 30px;
+            font-size: 14px;
+            font-family: "JF Flat",sans-serif;
+            strong{
+                font-size: 30px;
+            }
+        }
+    }
+}
+.product-meta{
+    // border: 1px solid #ddd;
+}
+.product-tabs ul{
+    border-radius: 4px;
+    &.nav {
+        border: 2px solid #f6f6f6;
+        > li{
+            float: right;
+        }
+    }
 }

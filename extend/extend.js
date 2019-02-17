@@ -14,7 +14,8 @@ var _INIT_SWIPPER_ONESLIDE = function(){
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },            
-        })
+        });
+        selector.find('.swiper-wrapper').css('display', 'flex');
     })    
 } 
 
@@ -51,6 +52,7 @@ var _INIT_SWIPPER_DEALS = function(){
                 }
             }
         });
+        selector.find('.swiper-wrapper').css('display', 'flex');
     })
 }
 
@@ -87,6 +89,7 @@ var _INIT_CAT_ICONS = function(){
                 }
             }
         });
+        selector.find('.swiper-wrapper').css('display', 'flex');
     })
 }
 
@@ -127,6 +130,7 @@ var _INIT_SWIPPER_Category = function(){
                 }
             }
         });
+        selector.find('.swiper-wrapper').css('display', 'flex');
     })
 }
 var _TOGGLE_MAIN_SEARCH = function(){
