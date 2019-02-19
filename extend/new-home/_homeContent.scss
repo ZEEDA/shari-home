@@ -483,12 +483,12 @@ section{
 // Tracking
 //===========
 .user-info{
-    margin: 30px 0;
+    margin: 30px 0 15px;
     @extend %clearfix;
     &_img{
         float: right;
         .material-icons{
-            color: var(--secondary, #b50389);
+            color: var(--primary, #b50389);
             font-size: 40px;
             line-height: 34px;
         }
@@ -512,7 +512,7 @@ section{
 .user-actions{
     ul{
         padding: 0;
-        margin: 30px 0;
+        margin: 15px 0 30px;
         list-style: none;
         li{
             padding-right: 0;
@@ -538,6 +538,7 @@ section{
 }
 .order-item{
     background-color: var(--bg-light, #f0f0f0);
+    margin-bottom: 15px;
     .order-head-info{
         border-bottom: 1px solid #fff;
         padding: 15px;
@@ -549,6 +550,13 @@ section{
         font-size: 14px;
         color: var(--text-dark, #333);
         font-weight: 300;
+        padding: 0;
+        strong{
+            font-weight: 400;
+        }
+    }
+    .value{
+        font-weight: 400;
         strong{
             font-weight: 600;
         }
@@ -567,12 +575,102 @@ section{
             padding-right: 74px;
             float: rigt;
         }
+        @media (max-width: 767px){
+            .img{
+                float: none;
+                img{
+                    width: 70px;
+                    display: block;
+                    margin: 0 auto 15px;
+                }
+            }
+            .text{
+                padding-right: 0;
+                float: none;
+            }
+        }
     }
     .order-trader-info{
-        padding: 15px 0;
-        padding-right: 15px;
+        padding: 15px;
+        // padding-right: 15px;
     }
     .btn{
-        width: 192px;
+        max-width: 100%;
+        width: 250px;
     }
+    .status-wrapper{
+        margin: 30px auto 60px;
+        width: calc(100% - 30px);
+        ul{
+            padding: 0;
+            margin: 16px 0 0;
+            list-style: none;
+            text-align: right;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            background-color: #E2E2E2;
+            line-height: 12px;
+            border-radius: 2px;
+            li{
+                position: relative;
+                display: block;
+                font-family: "JF Flat", sans-serif;
+                min-width: 70px;
+                flex-grow: 1;            
+                &[hidden]{display: none;}
+                span.icon{
+                    position: absolute;
+                    display: block;
+                    background: #fff;
+                    border: 1px solid #ddd;
+                    color: var(--text-light, #afafaf);
+                    font-size: 16px;
+                    font-weight: 600;
+                    width: 44px;
+                    height: 44px;
+                    text-align: center;
+                    line-height: 44px;
+                    border-radius: 50%;
+                    right: 50%;
+                    top: 50%;
+                    transform: translate(50%, -52%);
+                }
+                .title{
+                    position: relative;
+                    top: 38px;
+                    color: var(--text-light, #afafaf);
+                    font-size: 14px;
+                }
+                &.one{
+                    text-align: center;
+                }
+                &.two{
+                    text-align: center;
+                }
+                &.three{
+                    text-align: center;
+                }
+                &.active{
+                    .icon{
+                        // background: linear-gradient(to bottom,#7be7a3 0,#3adb76 100%);                        
+                        background: #3ADB76;
+                        color: #fff;
+                        border-color: #3ADB76;
+                    }
+                    .title{
+                        color: var(--text-dark, #333);
+                    }
+                    &.rejected{
+                        .icon{
+                            // background: linear-gradient(to bottom,#7be7a3 0,#3adb76 100%);                        
+                            background: #641044;
+                            color: #fff;
+                            border-color: #641044;
+                        }                        
+                    }
+                }
+            }
+        }
+    }    
 }
