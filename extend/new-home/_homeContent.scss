@@ -479,3 +479,100 @@ section{
         }
     }
 }
+//===========
+// Tracking
+//===========
+.user-info{
+    margin: 30px 0;
+    @extend %clearfix;
+    &_img{
+        float: right;
+        .material-icons{
+            color: var(--secondary, #b50389);
+            font-size: 40px;
+            line-height: 34px;
+        }
+    }
+    &_text{
+        float: right;
+        span{
+            display: block;
+            &.user-name{
+                font-size: 16px;
+                line-height: 20px;
+            }
+            &.user-mail{
+                font-size: 11px;
+                line-height: 14px;
+                color: var(--text-light, #afafaf);
+            }
+        }
+    }
+}
+.user-actions{
+    ul{
+        padding: 0;
+        margin: 30px 0;
+        list-style: none;
+        li{
+            padding-right: 0;
+            a{
+                display: block;
+                padding: 10px 15px;
+                background-color: var(--bg-light, #f0f0f0);
+                font-size: 14px;
+                color: var(--text-dark, #333);
+                border-bottom: 1px solid #fff;
+                &.active ,&:hover{
+                    background-color: #92036f;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+.orders-list{
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+}
+.order-item{
+    background-color: var(--bg-light, #f0f0f0);
+    .order-head-info{
+        border-bottom: 1px solid #fff;
+        padding: 15px;
+        .col-md-6{
+            // padding-left: 8px;
+        }
+    }
+    .label, .value{
+        font-size: 14px;
+        color: var(--text-dark, #333);
+        font-weight: 300;
+        strong{
+            font-weight: 600;
+        }
+    }
+    .order-prod-info{
+        padding: 15px 0;
+        padding-right: 15px;
+        @extend %clearfix;
+        .img{
+            float: right;
+            img{
+                width: 70px;
+            }
+        }
+        .text{
+            padding-right: 74px;
+            float: rigt;
+        }
+    }
+    .order-trader-info{
+        padding: 15px 0;
+        padding-right: 15px;
+    }
+    .btn{
+        width: 192px;
+    }
+}
