@@ -117,7 +117,7 @@ section{
         }
         p{
           &.title{
-            margin: 8px 0!important;
+            margin: 4px 0 8px!important;
             font-size: 16px;
             font-weight: 600;
             line-height: 23px;
@@ -130,12 +130,12 @@ section{
         }
         .time{
           display: block;
-          font-size: 14px;
+          font-size: 12px;
           margin-top: 4px;
           color: var(--text-light, #afafaf);
         }
         .city{
-          font-size: 14px;
+          font-size: 12px;
           display: block;
           margin-bottom: 8px;
           strong{

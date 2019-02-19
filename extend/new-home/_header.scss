@@ -535,9 +535,9 @@ nav+div{
 				}
 				.brand {
 					overflow: hidden;
-					float: right;
-					margin-right: 15px;
-					padding-left: 52px;
+					float: none;
+					margin: auto;
+					padding-left: 0;
 					position: relative;
 					.inline{
 						height: 60px;
@@ -553,7 +553,7 @@ nav+div{
 					padding: 12px 15px 15px;
 					font-size: 20px;
 					font-weight: 700;
-					text-align: right;
+					text-align: center;
 					color: #d3aac4;
 					@extend %clearfix;
 					span{
