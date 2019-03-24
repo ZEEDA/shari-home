@@ -63,6 +63,8 @@ section{
 }
 .jumbo-header{
     background: url('../frontend/images/puzzle.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
     &:before{
         content: '';
