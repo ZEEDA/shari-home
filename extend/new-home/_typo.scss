@@ -178,4 +178,9 @@
             }
         }
     }
+    @media (max-width: 500px) {
+        ol, ul{
+            padding-right: 12px;
+        }
+    }
 }
