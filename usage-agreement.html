@@ -1,0 +1,1684 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>شاري | الأفراد</title>
+	<!-- Place favicon.ico in the root directory -->
+	<!-- Favicon -->
+	<link rel="shortcut icon" href=" {{ asset('favicon.ico') }}" type="image/x-icon">
+	<link rel="apple-touch-icon" href=" {{ asset('apple-touch-icon.png') }}">
+
+	<!-- Google Material Design Icons & Simple Line Icons -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/earlyaccess/droidarabickufi.css" rel="stylesheet">
+	<link rel="stylesheet" href="production.css">
+	<link rel="stylesheet" href="extend/extend.css">
+	<style>
+		.invisible {
+			visibility: hidden;
+			display: none;
+		}
+	</style>
+</head>
+	
+<body class="lang-rtl page-generic">
+	<nav class="offscreen-nav col-xs-12 col-sm-6 col-md-4 col-lg-2" id="offscreenNav" style="display: block; right: 0px;">
+	  <a class="hidden-xs position-relative row xxs-p-15 display-block" data-action="offscreenNavClose" href="#">
+	  <div class="offscreen-nav-close position-relative z-index-high clearfix">
+	    <i class="icon icon-arrow-left pull-left text-lg xxs-mt-2"></i> <span class="display-block text-light">عودة</span>
+	  </div>
+	  <div class="position-absolute bg-darkgray opacity-3 x-left y-top full-width full-height"></div></a>
+	  <div class="account-wrapper hidden-sm hidden-md hidden-lg">
+	    <header>
+	      <div class="top">
+	        <a class="close-menu" data-action="offscreenNavClose" href="#"><span class="material-icons">clear</span></a> <a class="display-inline-block va-top brand" href="http://localhost:8000/home"><img alt="SHARI شاري" class="img-responsive log_resolution inline" src="frontend/images/logo-inline.png"></a>
+	      </div>
+	      <div class="greeting">
+	        <p><span>مرحبا, نحن شاري!</span></p>
+	      </div>
+	      <div class="account-actoin-btns">
+	        <ul>
+	          <li class="item-link"><i class="icon material-icons">home</i> <span class="title">الرئيسية</span></li>
+	          <li class="item-link"><i class="icon material-icons">person</i> <span class="title">تسجيل الدخول</span></li>
+	          <li class="item-link"><i class="icon material-icons">person_add</i> <span class="title">اشترك الاّن</span></li>
+	        </ul>
+	      </div>
+	    </header>
+	  </div>
+	  <ul class="xxs-mt-20">
+	    <li>
+	      <a href="http://localhost:8000/home">SHARI شاري</a>
+	      <ul>
+	        <li>
+	          <a href="http://localhost:8000/pages/terms">شروط الاستخدام</a>
+	        </li>
+	        <li>
+	          <a href="http://localhost:8000/pages/stores-agreement">اتفاقية المتاجر&nbsp;</a>
+	        </li>
+	        <li>
+	          <a href="http://localhost:8000/pages/commission">عمولة منصة شاري</a>
+	        </li>
+	        <li>
+	          <a href="http://localhost:8000/memberships">العضويات</a>
+	        </li>
+	        <li>
+	          <a href="http://localhost:8000/how-to-use-shari">كيف تستخدم شارى</a>
+	        </li>
+	        <li>
+	          <a href="http://localhost:8000/stores/map/locations">خريطة</a>
+	        </li>
+	        <li>
+	          <a href="http://localhost:8000/contact-us">اتصل بنا</a>
+	        </li>
+	      </ul>
+	    </li>
+	    <li>
+	      <a href="#">حسابى</a>
+	      <ul>
+	        <li>
+	          <a href="http://localhost:8000/register">تسجيل حساب</a>
+	        </li>
+	        <li>
+	          <a href="http://localhost:8000/login">تسجيل الدخول</a>
+	        </li>
+	        <li>
+	          <a href="http://localhost:8000/password/reset">نسيت كلمة المرور</a>
+	        </li>
+	      </ul>
+	    </li>
+	    <li>
+	      <a href="http://localhost:8000/categories/index">التصنيفات</a>
+	      <ul>
+	        <li class="submenu folded">
+	          <a class="has-child" href="http://localhost:8000/products">كل المنتجات</a>
+	          <ul>
+	            <li>
+	              <a href="http://localhost:8000/products">كل المنتجات</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/products/golden">المتاجر</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/products/individual">الافراد</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/products/auctions">المزادات</a>
+	            </li>
+	          </ul>
+	        </li>
+	        <li class="submenu folded">
+	          <a class="has-child" href="http://localhost:8000/categories/cars">السيارات</a>
+	          <ul>
+	            <li>
+	              <a href="http://localhost:8000/categories/Mercedes">مرسيدس</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/Kia">كيا</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/hyundai">هيونداي</a>
+	            </li>
+	            <li>
+	              <a class="has-child" href="http://localhost:8000/categories/toyota">تويوتا</a>
+	              <ul>
+	                <li>
+	                  <a href="http://localhost:8000/categories/camry">كامري</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/corolla">كورولا</a>
+	                </li>
+	              </ul>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/opel">أوبل</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/chevrolet">شفرولية</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/jeep">جيب</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/bmw">بي إم دبليو</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/daihatsu">ديهاتسو</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/renault">رينيولت</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/suzuki">سوزوكي</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/ford">فورد</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/mazda">مازدا</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/mitsubishi">ميتسوبيشي</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/nissan">نيسان</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/honda">هوندا</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/audi">أودي</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/isuzu">إيسوزو</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/infiniti">انفنتي</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/bentley">بنتلي</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/porsche">بورش</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/tyres">كفرات</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/akssoarat-alsyarat">اكسسوارات السيارات</a>
+	            </li>
+	          </ul>
+	        </li>
+	        <li class="submenu folded">
+	          <a class="has-child" href="http://localhost:8000/categories/market">التسوق</a>
+	          <ul>
+	            <li>
+	              <a href="http://localhost:8000/categories/watches-glasses">الساعات و النظارات</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/home">المنزل و الاثاث</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/kids-toys">ألعاب الأطفال</a>
+	            </li>
+	            <li>
+	              <a class="has-child" href="http://localhost:8000/categories/menclothes">ملابس رجالية</a>
+	              <ul>
+	                <li>
+	                  <a href="http://localhost:8000/categories/ryady">ملابس رياضية</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/bnatyl">بناطيل</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/tyshyrt">تيشيرت وقميص</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/mlabs-nom">ملابس نوم</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/mlabs-aarky-tklydy">ملابس عرقية وتقليدية</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/shmagh">شماغ</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/mlabs-dakhly">ملابس داخلية</a>
+	                </li>
+	              </ul>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/womensclothing">ملابس نسائية</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/childrenclothes">ملابس اطفال</a>
+	            </li>
+	          </ul>
+	        </li>
+	        <li class="submenu folded">
+	          <a class="has-child" href="http://localhost:8000/categories/real-states">الاعمار</a>
+	          <ul>
+	            <li>
+	              <a href="http://localhost:8000/categories/villas">فيلا</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/hotel-suites">اجنحة فندقية</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/furnished-apartments">شقق مفروشة</a>
+	            </li>
+	            <li>
+	              <a class="has-child" href="http://localhost:8000/categories/property-for-sale">عقارات للبيع</a>
+	              <ul>
+	                <li>
+	                  <a href="http://localhost:8000/categories/apartments-for-sale">شقق للبيع</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/shalyhat-llbyaa">شاليهات للبيع</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/aakar-tjary-llbyaa">عقار تجاري للبيع</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/ard-llbyaa">أرض للبيع</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/aamar-llbyaa">عمارة للبيع</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/fll-llbyaa">فلل للبيع</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/mhlat-llbyaa">محلات للبيع</a>
+	                </li>
+	              </ul>
+	            </li>
+	            <li>
+	              <a class="has-child" href="http://localhost:8000/categories/aakarat-llayjar">عقارات للايجار</a>
+	              <ul>
+	                <li>
+	                  <a href="http://localhost:8000/categories/shkk-llayjar">شقق للايجار</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/adoar-llayjar">ادوار للايجار</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/fll-llayjar">فلل للايجار</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/mhlat-llayjar">محلات للايجار</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/aamar-llayjar">عمارة للايجار</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/astrahat-llayjar">استراحات للايجار</a>
+	                </li>
+	              </ul>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/almsaaad">المصاعد</a>
+	            </li>
+	          </ul>
+	        </li>
+	        <li class="submenu folded">
+	          <a href="http://localhost:8000/categories/antiques">التراث</a>
+	        </li>
+	        <li class="submenu folded">
+	          <a class="has-child" href="http://localhost:8000/categories/alktronyat">الكترونيات</a>
+	          <ul>
+	            <li>
+	              <a class="has-child" href="http://localhost:8000/categories/tlfzyonat-osotyat">تلفزيونات وصوتيات</a>
+	              <ul>
+	                <li>
+	                  <a href="http://localhost:8000/categories/alshashat">الشاشات</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/almsrh-almnzly">المسرح المنزلي</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/mkbrat-alsot">مكبرات الصوت</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/smaaaat">سماعات</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/mshghlat-soty-omrey">مشغلات صوتية ومرئية</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/ajhz-alalaaab-alalktrony">أجهزة الألعاب الالكترونية</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/alaaab-alfydyo">العاب الفيديو</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/akssoarat-alshashat">اكسسوارات الشاشات</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/akssoarat-soty">اكسسوارات صوتية</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/akssoarat-alalaaab">اكسسوارات الألعاب</a>
+	                </li>
+	              </ul>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/akssoarataljoal">اكسسوارات الجوال</a>
+	            </li>
+	            <li>
+	              <a class="has-child" href="http://localhost:8000/categories/aljoalat">جوالات</a>
+	              <ul>
+	                <li>
+	                  <a href="http://localhost:8000/categories/abl-ayfon">ابل ايفون</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/joalat-samsonj">ساسمونج</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/joalat-sony">سوني</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/joalat-hoaoy">هواوي</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/joalat-nokya">نوكيا</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/joalat-htc">HTC</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/joalat-shaomy">شاومي</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/joalat-alkatl">الكاتل</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/joalat-anjo">انجو</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/joalat-lynofo">لينوفو</a>
+	                </li>
+	              </ul>
+	            </li>
+	            <li>
+	              <a class="has-child" href="http://localhost:8000/categories/alajhzallohy">الأجهزة اللوحية</a>
+	              <ul>
+	                <li>
+	                  <a href="http://localhost:8000/categories/abl-aaybad">ابل آيباد</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/tablt-samsonj">تابلت سامسونج</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/tablt-hoaoy">تابلت هواوي</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/tablt-lynofo">تابلت لينوفو</a>
+	                </li>
+	              </ul>
+	            </li>
+	            <li>
+	              <a class="has-child" href="http://localhost:8000/categories/kamyrat">كاميرات</a>
+	              <ul>
+	                <li>
+	                  <a href="http://localhost:8000/categories/kamyrat-rkmy">كاميرات رقمية</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/kamyrat-alfydyo">كاميرات الفيديو</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/akssoarat-alkamyra">اكسسوارات الكاميرا</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/kamyrat-almrakb">كاميرات المراقبة</a>
+	                </li>
+	              </ul>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/homeappliances">أجهزة منزلية</a>
+	            </li>
+	          </ul>
+	        </li>
+	        <li class="submenu folded">
+	          <a class="has-child" href="http://localhost:8000/categories/alhloyat">الحلويات والمأكولات</a>
+	          <ul>
+	            <li>
+	              <a href="http://localhost:8000/categories/moad-ghthaey">مواد غذائية</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/alasr-almntj">الأسر المنتجة</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/alhla">الحلويات</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/mhams">محامص وعطارة</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/makolat-shrky">مأكولات شرقية</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/makolat-aarby">مأكولات عربية</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/makolat-shaaby">مأكولات شعبية</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/bofyh-mftoh">بوفيه مفتوح</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/tmor">تمور</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/aasl">عسل</a>
+	            </li>
+	            <li>
+	              <a href="http://localhost:8000/categories/akhr">اخرى</a>
+	            </li>
+	          </ul>
+	        </li>
+	        <li class="submenu folded">
+	          <a class="has-child" href="http://localhost:8000/categories/sh-jmal">الصحة والجمال</a>
+	          <ul>
+	            <li>
+	              <a class="has-child" href="http://localhost:8000/categories/adoat-tjmyl">أدوات تجميل</a>
+	              <ul>
+	                <li>
+	                  <a href="http://localhost:8000/categories/atkm-tjmyl">أطقم تجميل</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/adoat-makyaj">أدوات ماكياج</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/alojh">الوجه</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/alaayon">العيون</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/alshfah">الشفاه</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/alathafr">الاظافر</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/adoat-tjmyl-akhr">اخرى</a>
+	                </li>
+	              </ul>
+	            </li>
+	            <li>
+	              <a class="has-child" href="http://localhost:8000/categories/alaanay-balbshr">العناية بالبشرة</a>
+	              <ul>
+	                <li>
+	                  <a href="http://localhost:8000/categories/krymat-alojh">كريمات الوجه</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/krymat-aljsm">كريمات الجسم</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/loshn-aljsm">لوشن الجسم</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/msthdrat-albshr">مستحضرات البشرة</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/aanay-balbshr-akhr">اخرى</a>
+	                </li>
+	              </ul>
+	            </li>
+	            <li>
+	              <a class="has-child" href="http://localhost:8000/categories/alaanay-balshaar">العناية بالشعر</a>
+	              <ul>
+	                <li>
+	                  <a href="http://localhost:8000/categories/asbagh-llshaar">أصباغ للشعر</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/akssoarat-llshaar">اكسسوارات للشعر</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/maaalj-llshaar">معالج للشعر</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/shambo-blsm">شامبو بلسم</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/shaar-mstaaar">شعر مستعار</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/elktronyat-tsfyf-alshaar">إلكترونيات تصفيف الشعر</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/msthdrat-aalaj-alshaar">مستحضرات علاج الشعر</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/aanay-balshaar-akhr">اخرى</a>
+	                </li>
+	              </ul>
+	            </li>
+	            <li>
+	              <a class="has-child" href="http://localhost:8000/categories/alaanay-alshkhsy">العناية الشخصية</a>
+	              <ul>
+	                <li>
+	                  <a href="http://localhost:8000/categories/adoat-hlak">ادوات حلاقة</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/adoat-azal-alshaar">ادوات ازالة الشعر</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/adoat-nthafaljsm">ادوات نظافة الجسم</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/mzyl-raeh">مزيل رائحة</a>
+	                </li>
+	                <li>
+	                  <a href="http://localhost:8000/categories/aanay-shkhsy-akhr">اخرى</a>
+	                </li>
+	              </ul>
+	            </li>
+	          </ul>
+	        </li>
+	        <li class="submenu folded">
+	          <a href="http://localhost:8000/categories/livestock">الثروة الحيوانية</a>
+	        </li>
+	      </ul>
+	    </li>
+	  </ul>
+	</nav>
+
+	<div id="scrollManager">
+		<div id="pageRoot" class="">
+		<nav class="std-nav z-index-top card-dp-2" id="stdNav">
+			<header>
+				<div class="container">
+					<div class="row">
+						<div class="logo-wrapper col-xs-12 col-sm-12 col-md-2">
+							<a class="display-inline-block va-top nav-toggle main-nav" data-action="offscreenNavToggle" href="#"><i class="icon-menu"></i></a> <a class="display-inline-block va-top brand" href="http://localhost:8000/home"><img alt="SHARI شاري" class="img-responsive log_resolution block" src="frontend/images/logo-light.png"> <img alt="SHARI شاري" class="img-responsive log_resolution inline" src="frontend/images/logo-inline.png"></a>
+							<div class="cart">
+								<div class="shop-actions display-inline-block va-top shop-cart position-relative lang-rtl">
+									<a class="action-toggle icon-basket" data-action="toggleCart" href="#"><span class="position-absolute z-index-high badge badge-sm badge-danger border-radius-round text-center transition opacity-0" id="cart_count">0</span></a>
+									<div class="shop-card container position-absolute z-index-top y-bottom x-left">
+										<div class="col-xs-12 col-sm-6 col-lg-4 xxs-p-0 position-absolute z-index-high bg-lightgray border-radius-sm card-dp-2 y-top x-left text-right" id="cartItems" style="display: none;">
+											<div class="bg-light xxs-p-10 clearfix border-radius-sm card-dp-1 position-relative z-index-medium" id="cart_header">
+												<h6 class="pull-right"><strong data-bind="cartItems">0</strong> منتج فى سلة الشراء</h6>
+											</div>
+											<div class="xxs-pt-5 card-items position-relative z-index-low" id="cart_container"></div>
+										</div>
+									</div>
+								</div>
+							</div><a class="display-inline-block search-toggle js_mainSearchToggle" href="#"><span class="hidden-md hidden-lg hidden-sm material-icons">search</span></a>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-7">
+							<div class="search-wrapper">
+								<div class="z-hero-search__bg-form clearfix">
+									<form>
+										<div class="form-group">
+												<div class="col-xs-4 col-sm-3 zg-padding-x-0--xs">
+														<div class="input">
+																<select class="form-control right-radius js__single-select">
+																		<option value="0">جميع الأقسام</option>
+																		<option value="HI">التسوق</option>
+																		<option value="AZ">الساعات</option>
+																		<option value="CO">ملابس</option>
+																		<option value="ID">السيارات</option>
+																		<option value="MT">ألعاب الاطفال</option>
+																		<option value="NE">بناطيل</option>
+																		<option value="NM">المنزل والاثاث</option>
+																		<option value="ND">فساتين افراح</option>
+																		<option value="UT">فساتين سهرات</option>
+																		<option value="WY">فساتين اطفال</option>
+																</select>
+														</div>
+												</div>
+
+												<div class="col-xs-7 col-sm-7 zg-padding-x-0--xs">
+													<div class="input">
+															<i class="ti-search"></i>
+															<input type="text" class="form-control" placeholder="ما الذي تبحث عنه؟">
+													</div>
+												</div>
+
+												<div class="col-xs-1 col-sm-2 zg-padding-x-0--xs">
+													<button type="submit" class="btn btn-primary form-control left-radius">
+														<span class="hidden-md hidden-lg hidden-sm material-icons">search</span>
+														<span class="hidden-xs">بحث</span>
+													</button>
+												</div>
+										</div>										
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-3">
+							<div class="header-actions hidden-xs">
+								<a class="z-auth btn btn-sm btn-ghost" href="http://localhost:8000/login">تسجيل الدخول</a>
+								<div class="hidden-xs shop-actions display-inline-block va-top shop-cart xxs-mr-5 position-relative lang-rtl">
+									<a class="action-toggle icon-basket" data-action="toggleCart" href="#"><span class="position-absolute z-index-high badge badge-sm badge-danger border-radius-round text-center transition opacity-0" id="cart_count">0</span></a>
+									<div class="shop-card container position-absolute z-index-top y-bottom x-left">
+										<div class="col-xs-12 col-sm-6 col-lg-4 xxs-p-0 position-absolute z-index-high bg-lightgray border-radius-sm card-dp-2 y-top x-left text-right" id="cartItems" style="display: none;">
+											<div class="bg-light xxs-p-10 clearfix border-radius-sm card-dp-1 position-relative z-index-medium" id="cart_header">
+												<h6 class="pull-right"><strong data-bind="cartItems">0</strong> منتج فى سلة الشراء</h6>
+											</div>
+											<div class="xxs-pt-5 card-items position-relative z-index-low" id="cart_container"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<nav class="mega-nav visible-md-block visible-lg-block" id="megaNav">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<ul class="mega-nav_bar">
+								<li>
+									<a href="http://localhost:8000/home"><span class="arrow material-icons Display-inline-block">home</span> الرئيسية</a>
+								</li>
+								<li>
+									<a href="http://localhost:8000/products">كل المنتجات</a>
+									<ul class="submenu dropdown-menu col-xs-12 pull-right">
+										<li style="list-style: none; display: inline">
+											<h2 class="text-lightgray col-xs-12">كل المنتجات</h2>
+										</li>
+										<li>
+											<a href="http://localhost:8000/products">كل المنتجات</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/products/golden">المتاجر</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/products/individual">الافراد</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/products/auctions">المزادات</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="http://localhost:8000/categories/cars">السيارات</a>
+									<ul class="submenu dropdown-menu col-xs-12 pull-right card-bg-cat-cars">
+										<li style="list-style: none; display: inline">
+											<h2 class="text-lightgray col-xs-12">السيارات</h2>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/Mercedes">مرسيدس</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/Kia">كيا</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/hyundai">هيونداي</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/toyota">تويوتا <i class="icon-arrow-left icons has_menu_icon"></i></a>
+											<ul class="_submenu dropdown-menu">
+												<li>
+													<a href="http://localhost:8000/categories/camry">كامري</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/corolla">كورولا</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/opel">أوبل</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/chevrolet">شفرولية</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/jeep">جيب</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/bmw">بي إم دبليو</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/daihatsu">ديهاتسو</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/renault">رينيولت</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/suzuki">سوزوكي</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/ford">فورد</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/mazda">مازدا</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/mitsubishi">ميتسوبيشي</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/nissan">نيسان</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/honda">هوندا</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/audi">أودي</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/isuzu">إيسوزو</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/infiniti">انفنتي</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/bentley">بنتلي</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/porsche">بورش</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/tyres">كفرات</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/akssoarat-alsyarat">اكسسوارات السيارات</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="http://localhost:8000/categories/market">التسوق</a>
+									<ul class="submenu dropdown-menu col-xs-12 pull-right card-bg-cat-shopping">
+										<li style="list-style: none; display: inline">
+											<h2 class="text-lightgray col-xs-12">التسوق</h2>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/watches-glasses">الساعات و النظارات</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/home">المنزل و الاثاث</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/kids-toys">ألعاب الأطفال</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/menclothes">ملابس رجالية <i class="icon-arrow-left icons has_menu_icon"></i></a>
+											<ul class="_submenu dropdown-menu">
+												<li>
+													<a href="http://localhost:8000/categories/ryady">ملابس رياضية</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/bnatyl">بناطيل</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/tyshyrt">تيشيرت وقميص</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/mlabs-nom">ملابس نوم</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/mlabs-aarky-tklydy">ملابس عرقية وتقليدية</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/shmagh">شماغ</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/mlabs-dakhly">ملابس داخلية</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/womensclothing">ملابس نسائية</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/childrenclothes">ملابس اطفال</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="http://localhost:8000/categories/real-states">الاعمار</a>
+									<ul class="submenu dropdown-menu col-xs-12 pull-right card-bg-cat-constructions">
+										<li style="list-style: none; display: inline">
+											<h2 class="text-lightgray col-xs-12">الاعمار</h2>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/villas">فيلا</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/hotel-suites">اجنحة فندقية</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/furnished-apartments">شقق مفروشة</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/property-for-sale">عقارات للبيع <i class="icon-arrow-left icons has_menu_icon"></i></a>
+											<ul class="_submenu dropdown-menu">
+												<li>
+													<a href="http://localhost:8000/categories/apartments-for-sale">شقق للبيع</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/shalyhat-llbyaa">شاليهات للبيع</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/aakar-tjary-llbyaa">عقار تجاري للبيع</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/ard-llbyaa">أرض للبيع</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/aamar-llbyaa">عمارة للبيع</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/fll-llbyaa">فلل للبيع</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/mhlat-llbyaa">محلات للبيع</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/aakarat-llayjar">عقارات للايجار <i class="icon-arrow-left icons has_menu_icon"></i></a>
+											<ul class="_submenu dropdown-menu">
+												<li>
+													<a href="http://localhost:8000/categories/shkk-llayjar">شقق للايجار</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/adoar-llayjar">ادوار للايجار</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/fll-llayjar">فلل للايجار</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/mhlat-llayjar">محلات للايجار</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/aamar-llayjar">عمارة للايجار</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/astrahat-llayjar">استراحات للايجار</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/almsaaad">المصاعد</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="http://localhost:8000/categories/antiques">التراث</a>
+									<div class="submenu dropdown-menu col-xs-12 pull-right card-bg-cat-legacy" style="margin-left: 2em">
+										<h2 class="text-lightgray col-xs-12">التراث</h2>
+									</div>
+								</li>
+								<li>
+									<a href="http://localhost:8000/categories/alktronyat">الكترونيات</a>
+									<ul class="submenu dropdown-menu col-xs-12 pull-right card-bg-cat-">
+										<li style="list-style: none; display: inline">
+											<h2 class="text-lightgray col-xs-12">الكترونيات</h2>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/tlfzyonat-osotyat">تلفزيونات وصوتيات <i class="icon-arrow-left icons has_menu_icon"></i></a>
+											<ul class="_submenu dropdown-menu">
+												<li>
+													<a href="http://localhost:8000/categories/alshashat">الشاشات</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/almsrh-almnzly">المسرح المنزلي</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/mkbrat-alsot">مكبرات الصوت</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/smaaaat">سماعات</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/mshghlat-soty-omrey">مشغلات صوتية ومرئية</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/ajhz-alalaaab-alalktrony">أجهزة الألعاب الالكترونية</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/alaaab-alfydyo">العاب الفيديو</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/akssoarat-alshashat">اكسسوارات الشاشات</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/akssoarat-soty">اكسسوارات صوتية</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/akssoarat-alalaaab">اكسسوارات الألعاب</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/akssoarataljoal">اكسسوارات الجوال</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/aljoalat">جوالات <i class="icon-arrow-left icons has_menu_icon"></i></a>
+											<ul class="_submenu dropdown-menu">
+												<li>
+													<a href="http://localhost:8000/categories/abl-ayfon">ابل ايفون</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/joalat-samsonj">ساسمونج</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/joalat-sony">سوني</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/joalat-hoaoy">هواوي</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/joalat-nokya">نوكيا</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/joalat-htc">HTC</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/joalat-shaomy">شاومي</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/joalat-alkatl">الكاتل</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/joalat-anjo">انجو</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/joalat-lynofo">لينوفو</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/alajhzallohy">الأجهزة اللوحية <i class="icon-arrow-left icons has_menu_icon"></i></a>
+											<ul class="_submenu dropdown-menu">
+												<li>
+													<a href="http://localhost:8000/categories/abl-aaybad">ابل آيباد</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/tablt-samsonj">تابلت سامسونج</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/tablt-hoaoy">تابلت هواوي</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/tablt-lynofo">تابلت لينوفو</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/kamyrat">كاميرات <i class="icon-arrow-left icons has_menu_icon"></i></a>
+											<ul class="_submenu dropdown-menu">
+												<li>
+													<a href="http://localhost:8000/categories/kamyrat-rkmy">كاميرات رقمية</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/kamyrat-alfydyo">كاميرات الفيديو</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/akssoarat-alkamyra">اكسسوارات الكاميرا</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/kamyrat-almrakb">كاميرات المراقبة</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/homeappliances">أجهزة منزلية</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="http://localhost:8000/categories/alhloyat">الحلويات والمأكولات</a>
+									<ul class="submenu dropdown-menu col-xs-12 pull-right card-bg-cat-">
+										<li style="list-style: none; display: inline">
+											<h2 class="text-lightgray col-xs-12">الحلويات والمأكولات</h2>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/moad-ghthaey">مواد غذائية</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/alasr-almntj">الأسر المنتجة</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/alhla">الحلويات</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/mhams">محامص وعطارة</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/makolat-shrky">مأكولات شرقية</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/makolat-aarby">مأكولات عربية</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/makolat-shaaby">مأكولات شعبية</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/bofyh-mftoh">بوفيه مفتوح</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/tmor">تمور</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/aasl">عسل</a>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/akhr">اخرى</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="http://localhost:8000/categories/sh-jmal">الصحة والجمال</a>
+									<ul class="submenu dropdown-menu col-xs-12 pull-right card-bg-cat-">
+										<li style="list-style: none; display: inline">
+											<h2 class="text-lightgray col-xs-12">الصحة والجمال</h2>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/adoat-tjmyl">أدوات تجميل <i class="icon-arrow-left icons has_menu_icon"></i></a>
+											<ul class="_submenu dropdown-menu">
+												<li>
+													<a href="http://localhost:8000/categories/atkm-tjmyl">أطقم تجميل</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/adoat-makyaj">أدوات ماكياج</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/alojh">الوجه</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/alaayon">العيون</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/alshfah">الشفاه</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/alathafr">الاظافر</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/adoat-tjmyl-akhr">اخرى</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/alaanay-balbshr">العناية بالبشرة <i class="icon-arrow-left icons has_menu_icon"></i></a>
+											<ul class="_submenu dropdown-menu">
+												<li>
+													<a href="http://localhost:8000/categories/krymat-alojh">كريمات الوجه</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/krymat-aljsm">كريمات الجسم</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/loshn-aljsm">لوشن الجسم</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/msthdrat-albshr">مستحضرات البشرة</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/aanay-balbshr-akhr">اخرى</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/alaanay-balshaar">العناية بالشعر <i class="icon-arrow-left icons has_menu_icon"></i></a>
+											<ul class="_submenu dropdown-menu">
+												<li>
+													<a href="http://localhost:8000/categories/asbagh-llshaar">أصباغ للشعر</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/akssoarat-llshaar">اكسسوارات للشعر</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/maaalj-llshaar">معالج للشعر</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/shambo-blsm">شامبو بلسم</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/shaar-mstaaar">شعر مستعار</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/elktronyat-tsfyf-alshaar">إلكترونيات تصفيف الشعر</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/msthdrat-aalaj-alshaar">مستحضرات علاج الشعر</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/aanay-balshaar-akhr">اخرى</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="http://localhost:8000/categories/alaanay-alshkhsy">العناية الشخصية <i class="icon-arrow-left icons has_menu_icon"></i></a>
+											<ul class="_submenu dropdown-menu">
+												<li>
+													<a href="http://localhost:8000/categories/adoat-hlak">ادوات حلاقة</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/adoat-azal-alshaar">ادوات ازالة الشعر</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/adoat-nthafaljsm">ادوات نظافة الجسم</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/mzyl-raeh">مزيل رائحة</a>
+												</li>
+												<li>
+													<a href="http://localhost:8000/categories/aanay-shkhsy-akhr">اخرى</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="http://localhost:8000/categories/livestock">الثروة الحيوانية</a>
+									<div class="submenu dropdown-menu col-xs-12 pull-right card-bg-cat-" style="margin-left: 2em">
+										<h2 class="text-lightgray col-xs-12">الثروة الحيوانية</h2>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</nav>		
+			<!-- END Navigation -->
+
+			<main class="main-content position-relative z-index-medium">
+				<section class="session-message clearfix row"></section>
+				<div class="container">
+					<div class="row">
+						<div class="typography">
+							<h1>
+								اتفاقية الاستخدام
+							</h1>
+							<h2>
+								مرحباً بك في منصة شاري
+							</h2>
+							<p>
+								يعد هذا الموقع منصة للتجارة الإلكترونية التي تتيح للمستخدمين من المؤسسات التجارية عرض وبيع المنتجات، كما يتيح للشركات والأفراد شراء مجموعة متنوعة من المنتجات. 
+							</p>
+							<p>
+								نحتفظ بحق تقديم خدمات جديدة وتحديث أي من الخدمات أو سحبها، وفقاً لتقديرنا الخاص دون اية مسؤولية. 
+							</p>
+							<ol>
+								<li>
+									<p>
+										شروط التسجيل 
+									</p>
+									<ol>
+										<li>
+											<p>
+												يحق لك التسجيل كمشترٍ أو بائع والاستفادة من الخدمات إذا توفرت لديك معايير الاهلية التالية: 
+											</p>
+											<ol>
+												<li>
+													<p>للمشترين: </p>
+													<ol>
+														<li><p>أن تكون بالغاً السن القانونية لتتمكن من شراء المنتجات في بلد إقامتك.</p></li>
+														<li><p>أن تكون قادراً على تقديم عنوان في المملكة العربية السعودية لتسليم المنتجات.</p></li>
+													</ol>	
+												</li>
+												<li>
+													<p>للبائعين:</p>
+													<ol>
+														<li>
+															<p>أن يكون لديك شركة تجارية مسجلة وفقاً لقواني المملكة العربية السعودية.</p>
+														</li>
+														<li>
+															<p>أن يكون لديك ترخيص تجاري سارٍ.</p>
+														</li>
+														<li>
+															<p>تقديم بيانات مصرفية داعمة.</p>
+														</li>
+														<li>
+															<p>تقر وتوافق على أنه قد تنطبق بعض المتطلبات الإضافية لبعض الفئات من المنتجات.</p>
+														</li>																							
+													</ol>
+												</li>
+											</ol>
+										</li>
+										<li>
+											<p>
+												للتسجيل على الموقع، سنحتاج إلى تقديم بعض المعلومات، ولن يتم قبول تسجيلك في الموقع إذا لم يتم تقديم المعلومات اللازمة لنا. لدينا الحق في رفض أي من عمليات التسجيل دون إبداء الأسباب. كما يحق لنا أيضاً القيام بعمليات التحقق اللازمة للتأكد من هويتك ومتطلبات التسجيل.										
+											</p>
+										</li>
+										<li>
+											<p>وبمجرد الانتهاء من التسجيل بنجاح، يستمر التسجيل الخاص بك لفترة غير محددة خاضعاً لاحتمال تعليقه أو إلغائه وفقاً للبند رقم 4 من شروط الاستخدام هذه.</p>
+										</li>
+									</ol>
+								</li>
+								<li>
+									<p>الالتزامات الخاصة بك</p>
+									<ol>
+										<li>
+											<p>عند استخدامك للخدمات أو وصولك إليها، فأنت توافق على ما يلي:</p>
+											<ol>
+												<li>
+													<p>مسؤوليتك عن الحفاظ على الخصوصية وتقييد الوصول إلى الحساب الخاص بك واستخدامه هو وكلمة المرور، والموافقة على تحمل مسؤولية جميع الأنشطة التي تتم باسم الحساب الخاص بك وكلمة المرور الخاصة بك.</p>
+												</li>
+												<li>
+													<p>الموافقة على إخطارنا فورا عن أي استخدام غير مصرح به لكلمة المرور أو الحساب الخاص بك أو أي خرقٍ آخر لمعايير الاستخدام الآمن للموقع.</p>
+												</li>
+												<li>
+													<p>تقديم المعلومات الكاملة والحقيقية والدقيقة والحالية عن نفسك وعن استخدامك للخدمات كما هو محدد من قبلنا.</p>
+												</li>
+												<li>
+													<p>عدم الإفصاح للغير (باستثناء ما يلزم أو ما هو محدد من قبلنا) عن معلومات المستخدم المقدمة لك. </p>
+												</li>
+												<li>
+													<p>التعاون مع الطلبات الصادرة عنا للحصول على معلومات إضافية فيما يتعلق بأهليتكك واستخدامك لخدماتنا.</p>
+												</li>
+											</ol>
+										</li>
+										<li>
+											<p>عند استخدامك للخدمات أو وصولك إليها، فأنت توافق على أنك لن تقوم بما يلي:</p>
+											<ol>
+												<li>
+													<p>نشر أو إدراج أو تحميل أي من المحتويات أو المواد غير المناسبة أو المحظورة في موقعنا، بما في ذلك:</p>
+													<ol>
+														<li>
+															<p>المحتوى أو المواد غير الملائمة أخلاقياً أو دينياً بأي شكلٍ من الأشكال.</p>
+														</li>
+														<li>
+															<p>المحتوى أو المواد التي لا تتوافق مع القانون المحلي والشريعة الإسلامية والقواعد والأخلاق والقيم والآداب والتقاليد.</p>
+														</li>
+														<li>
+															<p>المحتوى أو المواد التي قد تُهدد الأمن القومي.</p>
+														</li>
+														<li>
+															<p>المحتوى أو المواد التي قد تروج أو تندرج في إطار المقامرة.</p>
+														</li>
+														<li>
+															<p>الأوراق المالية، بما في ذلك الأسهم أو السندات أو الصكوك أو أي من الأوراق المالية الأخرى أو أي من الأصول.</p>
+														</li>			
+														<li>
+															<p>أي من الأسلحة.</p>
+														</li>
+														<li>
+															<p>الخمر ومنتجات التبغ والمخدرات والمواد المؤثرة على العقل والمواد المنومة والمسكرات بأي من أنواعها والأدوية الطبية.</p>
+														</li>
+														<li>
+															<p>حسب علمك، المواد التي تكون معيبة أو زائفة أو تالفة أو مضللة أو قد تسبب ضررا عند استخدامها بشكلٍ طبيعي لمصلحة مستخدم آخر للموقع أو لصحته.</p>
+														</li>
+														<li>
+															<p>قسائم غير قابلة للتحويل.</p>
+														</li>
+														<li>
+															<p>المواد الكيميائية.</p>
+														</li>
+													</ol>
+												</li>
+												<li>
+													<p>نشر المواد التي لا يحق لك مشاركة الرابط الخاص بها أو إدراجها.</p>
+												</li>
+												<li>
+													<p>نشر المواد المزيفة أو المسروقة. </p>
+												</li>
+												<li>
+													<p>خرق القانون أو التحايل عليه، أو خرق أي من حقوق الغير أو الأنظمة الخاصة بنا أو السياسات أو خرق القرارات المتعلقة بحالة الحساب الخاص بك. </p>
+												</li>
+												<li>
+													<p>استخدام الخدمات إذا لم تعد تستوفي معايير أهلية الاستخدام أو كنتَ غير قادر على إبرام عقود ملزمة قانونياً أو تم ايقاف حسابك بشكلٍ مؤقت أو لأجلٍ غير مسمى.</p>
+												</li>
+												<li>
+													<p>عدم تسديدك ثمن المنتجات التي قمت بشرائها، إلا إذا كان هناك سبب قانوني يؤيد ذلك في أي من السياسات الخاصة بنا. </p>
+												</li>
+												<li>
+													<p>عدم تسليم العملاء المنتجات التي قمت ببيعها (إذا انطبق ذلك)، إلا إذا كان هناك سبب قانوني يؤيد موقفك ومذكور في أي من السياسات الخاصة بنا.</p>
+												</li>
+												<li>
+													<p>استخدام معلومات الاتصال المقدمة لك أثناء عقد الصفقة عبر الموقع لمحاولة زيادة مبيعاتك خارج حدود الموقع أو عبر مواقع أخرى.</p>
+												</li>
+												<li>
+													<p>التلاعب في سعر أي من المنتجات.</p>
+												</li>
+												<li>
+													<p>التدخل في القوائم الخاصة بالمستخدمين الآخرين.</p>
+												</li>
+												<li>
+													<p>اتخاذ أي إجراء من شأنه أن يقلل من تقييم الموقع وأنظمة التصنيف.</p>
+												</li>
+												<li>
+													<p>نشر المحتوى الخاطئ أو غير الدقيق أو المضلل أو المخادع أو التشهيري أو ما شابه.</p>
+												</li>
+												<li>
+													<p>نقل الحساب الخاص بك إلى طرف آخر دون الحصول على موافقة خطية مسبقة من قبلنا.</p>
+												</li>
+												<li>
+													<p>نشر الرسائل أو المراسلات الإلكترونية غير المرغوب فيها أو ما شابه ذلك.</p>
+												</li>
+												<li>
+													<p>نشر الفيروسات أو أيٍّ من التقنيات الآخرى التي قد تضر بخدماتنا أو بمصالح المستخدمين الآخرين أو أملاكهم.</p>
+												</li>
+												<li>
+													<p>خرق:</p>
+													<ol>
+														<li>
+															<p>القوانين الخاصة بحقوق النشر، العلامة التجارية، براءة الاختراع، الأخلاق، الإعلان، قاعدة البيانات، و/ أو أي من حقوق الملكية الفكرية (ويُشار إليها مجتمعة بـ "حقوق الملكية الفكرية") التي تتعلق بنا أو المرخصة لنا.</p>
+														</li>
+														<li>
+															<p>أي من حقوق الملكية الفكرية التي تتعلق بالغير.</p>
+														</li>
+													</ol>
+												</li>
+												<li>
+													<p>جمع المعلومات الخاصة بالمستخدمين دون الحصول على موافقتهم. </p>
+												</li>
+												<li>
+													<p>أو التحايل على أي من الإجراءات التقنية التي نتبعها لتقديم الخدمات. </p>
+												</li>
+											</ol>
+										</li>
+									</ol>
+								</li>
+								<li>
+									<p>حقوق الملكية الفكرية</p>
+									<ol>
+										<li>
+											<p>باستثناء الحقوق التي تم منحها صراحة وفقاً لشروط الاستخدام هذه:</p>
+											<ol>
+												<li>
+													<p>جميع المحتويات الواردة في الموقع تدخل في إطار ملكيتنا الخاصة أو ضمن الملكية الخاصة بمرخصينا، بما في ذلك على سبيل المثال لا الحصر النصوص والرسوم البيانية والشعارات والصور والمقاطع الصوتية والتنزيلات الرقمية والبرمجيات. فنحن (أو المرخصون لنا، وفقاً لما تقتضيه الحالة) نحتفظ بجميع حقوقنا، وملكيتنا ومصلحتنا بالموقع والخدمات -وذلك على سبيل المثال لا الحصر- بجميع حقوق الملكية الفكرية الواردة ضمن شروط الاستخدام هذه.</p>
+												</li>
+												<li>
+													<p>وأيضاً جميع الحقوق والملكيات والمصالح لأي من المعلومات أو المواد أو المحتويات الأخرى التي تقدمها أنت من خلال استخدامك للخدمات بالإضافة الى جميع حقوق الملكية الفكرية الخاصة بك والواردة ضمن شروط الاستخدام هذه ستصبح ملكاً لنا.</p>
+												</li>
+											</ol>
+										</li>
+										<li>
+											<p>توافق على أنه لا يحق لك استخدام العلامات التجارية الخاصة بنا دون وجود موافقة خطية مسبقة.</p>
+										</li>
+										<li>
+											<p>إن جميع الحقوق غير المخولة لك بشكلٍ واضح في شروط الاستخدام الماثلة يتم الاحتفاظ بها لنا أو للمرخصين لنا.</p>
+										</li>
+									</ol>
+								</li>
+								<li>
+									<p>الضمانات والتعهدات والإقرارات </p>
+									<ol>
+										<li>
+											<p>تضمن وتتعهد وتقر بما يلي:</p>
+											<ol>
+												<li>
+													<p>الامتثال التام للاستمرار بالعمل وفقاً للقوانين والأنظمة واللوائح المطبقة، بما في ذلك على سبيل المثال لا الحصر الالتزام بالتشريعات المتعلقة بقوانين الخصوصية وتنظيم المحتوى.</p>
+												</li>
+												<li>
+													<p>لديك السلطة الكاملة للتعاقد وفقاً لشروط الاستخدام الماثلة، وأن تنفيذك التزامك بموجب شروط الاستخدام هذه لا يتعارض مع:</p>
+													<ol>
+														<li>
+															<p>أي من القوانين أو القواعد أو اللوائح أو الإرشادات الحكومية التي تخضع لها.</p>
+														</li>
+														<li>
+															<p>أي من الاتفاقيات الأخرى التي كنت طرفاً فيها أو التي عليك الالتزام بها.</p>
+														</li>
+													</ol>
+												</li>
+												<li>
+													<p>إذا قمت بإنشاء حساب أو استخدامه بالنيابة عن شركة فأنت بذلك مخول بالتصرف نيابة عن هذه الشركة وتضمن التزامها بالعمل بشروط الاستخدام الماثلة. ويُعد هذا الحساب ملكاً لهذه الشركة وتحت إدارتها.</p>
+												</li>
+												<li>
+													<p>أنك مالك أو مخول بمنح الحقوق والتراخيص التي منحتنا إياها وفق شروط الاستخدام هذه.</p>
+												</li>
+												<li>
+													<p>أي محتوى قمت بتقديمه كجزء من استخدامك للخدمات ولأي من المنتجات التي تقوم بإدراجها، لا ينتهك حقوق الغير في أي مكان حول العالم، على سبيل المثال لا الحصر أي من حقوق الملكية الفكرية (سواء كانت مسجلة أم لا).</p>
+												</li>
+											</ol>
+										</li>
+										<li>
+											<p>وفقاً للبند ‎5-1، فإن الخدمات تُقدم إليك على "حالتها الحالية" دون ضمانات أو تعهدات أو إقرارات. فنحن نخلي مسؤوليتنا عن جميع الضمانات أو التعهدات أو الإقرارات بجميع أشكالها، سواء الصريحة أو الضمنية أو الإضافية، على سبيل المثال لا الحصر جميع الضمانات أو التعهدات أو الإقرارات الخاصة بصلاحية المحتوى للأغراض التجارية أو ملاءمته لغرض محدد أو عام أو عدم مخالفته أو خرقه لأي حقوق أو كون خدماتنا آمنة أو خالية من العيوب أو سوف تعمل دون وجود أي عطل أو سيتم تقديمها في الوقت المناسب أو على العموم.</p>
+										</li>
+										<li>
+											<p>وعلاوة على ذلك، فعلى الرغم من أننا نحاول أن نتوخى الدقة قدر المستطاع، فإننا لا نضمن أن تكون مواصفات المنتج أو أي محتوى آخر لأي خدمة دقيقاً أو كاملاً أو موثوقاً به أو حديثاً أو خالياً من الأخطاء. بالإضافة إلى ذلك -وبناءً على كونك مشترياً- فأنت توافق على أننا غير مسؤولين عن فحص أو اختبار القوائم أو محتوى الخدمات المقدمة من قبلنا أو من قبل الغير، وأنك لن تحاول أن تضع على عاتقنا مسؤولية أي من الأخطاء او العيوب في اي من القوائم. وبناءً على كونك بائعاً فإنك مسؤول عن مراجعة دقة المحتوى الوارد ضمن القوائم الخاصة بك وأنك لن تحاول أن تضع على عاتقنا أو على عاتق مقدمي المحتوى/ الكتيب مسؤولية وجود أخطاء أو عدم الدقة.</p>
+										</li>
+									</ol>
+								</li>
+								<li>
+									<p>التعليق أو الإنهاء أو الإلغاء </p>
+									<ol>
+										<li>
+											<p>مع عدم المساس بأيٍّ من الحقوق أو التعويضات أو دون أي مسؤولية تجاهك، يحق لنا حد أو تعليق أو سحب إمكانية دخولك او استخدامك للخدمات أو إلغاء طلب أي منتجات و/ أو حذف المحتوى المقدم من قبلك وفقاً لتقديرنا الخاص. وتجنبا للشك، سيتم رد أي مبالغ تم دفعها واستلامها من قبلنا فيما يتعلق بطلب منتجات تم إلغائه. </p>
+										</li>
+									</ol>
+								</li>
+								<li>
+									<p>
+										الإبلاغ عن انتهاك شروط الاستخدام: 
+									</p>
+									<ol>
+										<li>
+											<p>
+												نلتزم بضمان امتثال المنتجات والمحتوى الوارد في الموقع لشروط الاستخدام هذه. إذا كان المحتوى الوارد لا يتناسب مع شروط الاستخدام هذه يُرجى إخطارنا وسنقوم نحن بالتحقيق في الأمر. 
+											</p>
+										</li>
+									</ol>
+								</li>
+								<li>
+									<p>أحكام عامة</p>
+									<ol>
+										<li>
+											<p>
+												<strong>القانون المطبق:</strong>
+												 إن شروط الاستخدام هذه وأياً من الحقوق أو الواجبات غير التعاقدية ذات الصلة يجب إخضاعها وتفسيرها للقوانين المطبقة في المملكة العربية السعودية.. 
+											</p>
+										</li>
+										<li>
+											<p>
+												<strong>حل النزاعات:</strong>
+												 إذا كان لديك أي من المشكلات الخاصة بخدماتنا يُرجى الاتصال بنا‎. وسنعمل جاهدين على حل المشكلة التي تواجهك في أقرب فرصة ممكنة. يتم تسوية أي من النزاعات أو الخلافات المتعلقة بشروط الاستخدام هذه، بما في ذلك أي حقوق أو واجبات غير تعاقدية ذات صلة عن طريق محاكم المملكة العربية السعودية. 
+											</p>
+										</li>
+										<li>
+											<p>
+												<strong>حقوق الغير:</strong>
+												 الشخص الذي لا يُعد جزءاً من شروط الاستخدام هذه ليس لديه أي حق في تنفيذ أي من شروطها.
+											</p>
+										</li>
+										<li>
+											<p>
+												<strong>علاقة الأطراف:</strong>
+												 لا يوجد في شروط الاستخدام هذه ما يمكن للأطراف أو للغير تأويله أو تفسيره ليفسر العلاقة بيننا على أنها بين شركاء أو وكلاء أو يوجِد مشروعاً مشتركاً بين الأطراف، ولكنه من المفهوم والواضح أن كل الأطراف في الاتفاق هي أطراف مستقلة .												
+											</p>
+										</li>
+										<li>
+											<p>
+												<strong>التأكيدات الإضافية:</strong>
+												 تقوم الأطراف بالتصرفات اللازمة أو الترتيب لاتخاذ التصرفات اللازمة وتحرير المستندات وغيرها من الأمور التي تقع ضمن سلطتها من أجل إنفاذ شروط الاستخدام هذه والتحقق من العمل بها، بما في ذلك على سبيل المثال لا الحصر مساعدة كل طرف على الالتزام بالقانون المعمول به.
+											</p>
+										</li>
+										<li>
+											<p>
+												<strong>التنازل:</strong>
+												 تلتزم شروط الاستخدام هذه بضمان تحقيق الفائدة للأطراف ولخلفائهم المعنيين والمُفوضين رسمياً. توافق على أنك لن تقوم بالتنازل عن أو نقل شروط الاستخدام أو أي من الحقوق أو الواجبات الخاصة بك والمتعلقة بشروط الاستخدام هذه، سواء كان ذلك بشكلٍ مباشر أو غير مباشر، دون الحصول مسبقاً على موافقة خطية من قبلنا.												
+											</p>
+										</li>
+										<li>
+											<p>
+												<strong>مجمل الاتفاق:</strong>
+												 إن شروط الاستخدام هذه والوثائق المشار إليها أو المدرجة في شروط الاستخدام تمثل مجمل الاتفاق بين الأطراف فيما يتعلق بموضوع الاتفاقية وتسمو على وتحجب جميع الاتفاقيات والمفاوضات والإقرارات السابقة، الخطية أو الشفهية، ذات الصلة بالموضوع. باستثناء ما هو محدد في شروط الاستخدام والوثائق المشار إليها أو المدرجة في شروط الاستخدام الماثلة فلا توجد أي شروط أو إقرارات أو ضمانات أو تعهدات أو اتفاقيات بين الأطراف سواء كان ذلك مباشراً أو غير مباشر أو جماعياً أو صريحاً أو ضمنياً.
+											</p>
+										</li>
+										<li>
+											<p>
+												<strong>التعديلات:</strong>
+												 لا يحق إجراء أي تعديل على شروط الاستخدام هذه أو إدخال أي إضافة أو تكملتها. نحن نحتفظ بالحق في إدخال أي تعديل أو تغيير أو إضافة أو إكمال شروط الاستخدام هذه في أي وقت أو من وقتٍ لآخر. وسنقوم بنشر النسخة الحالية لشروط الاستخدام على الموقع وستكون سارية المفعول عند نشرها على الموقع أو بناء على الموعد المحدد من جانبنا بصفته "تاريخ السريان" (إن وجد). إن استخدامك المستمر للخدمات في حال حدوث أي تغييرات يُعد موافقة منك على الالتزام بشروط الاستخدام المعدلة.												
+											</p>
+										</li>
+										<li>
+											<p>
+												<strong>قابلية الفصل بين البنود:</strong>
+												 إذا ما تم اعتبار أي من أحكام شروط الاستخدام هذه ملغًى من قبل أيٍّ من المحاكم المختصة أو غير قانوني أو غير معمول به فإنه يتم إلغاء هذا لبند من شروط الاستخدام هذه وتستمر باقي الشروط والأحكام قائمة سارية نافذة طالما ظل الجوهر القانوني والاقتصادي للصفقات التي تمت تحت شروطها قائماً دون أي تأثير معاكس على أطرافها.
+											</p>
+										</li>
+										<li>
+											<p>
+												<strong>القوة القاهرة:</strong>
+												 لا يتحمل أي طرف مسؤولية وجود الخسارة أو الضرر أو التأخير أو عدم الوفاء نتيجة للأعمال الخارجة عن السيطرة لأي من الأطراف سواء كان ذلك العمل يمكن توقعه (مثل القضاء والقدر والإجراءات الصادرة عن السلطات التشريعية أو القضائية أو التنظيمية لأي من الحكومة الفيدرالية أو المحلية أو السلطات القضائية أو الإجراءات التي يقوم بها أي من المقاولين من الباطن التابعين لنا أو أي طرف ثالث مورد البضائع أو الخدمات لنا أو الاضطرابات العمالية أو الانقطاع الكامل للتيار الكهربائي أو المقاطعة الاقتصادية).												
+											</p>
+										</li>
+										<li>
+											<p>
+												<strong>عدم التنازل:</strong>
+												 إن التنازل عن أي من الأحكام الواردة في شروط الاستخدام لا يُعد تنازلاً عن أي من الأحكام الأخرى (المشابهة أو غير المشابهة)، ولا يعد أي تنازل آخر تنازلاً مستمراً عن أي من الأحكام المعنية، ما لم ننص على ذلك صراحة وخطياً.												
+											</p>
+										</li>
+										<li>
+											<p>
+												<strong>استمرار النفاذ:</strong>
+												 جميع الأحكام التي يُنص على أنها تظل سارية أو التي تسري بطبيعتها بعد إنهاء التعاقد تظل نافذة المفعول بعد إنهاء أو تعليق عضويتك في الموقع. 												
+											</p>
+										</li>
+									</ol>
+								</li>
+							</ol>
+
+						</div>
+					</div>
+				</div>
+			</main><!-- END MAIN CONTENT -->
+			<footer class="std-footer">
+				<div class="container">
+					<div class="row col-lg-pull-0 position-relative">
+						<div class="col-xs-12 col-lg-4 xxs-mb-60 lg-mb-0 xs-text-center lg-text-right">
+							<div class="footer-brand-desc">
+								<a class="brand-right display-inline-block" href="#"><img alt="Shari.sa" class="img-responsive log_resolution"
+									 src="frontend/images/logo-light.png"></a>
+								<p>شاري هو موقع يربط بين التاجر
+									والزبائن ويقدم تسهيلات ومميزات وخدمات للجميع بعيداً عن عشوائية التسويق والتجارة في
+									مواقع التواصل الاجتماعي حيث انه مخصص للشركات والمؤسسات والافراد .</p>
+								<div class="pay-methods">
+									<!-- <img src="frontend/images/payments/payment-methods.png" alt="visa card"> -->
+									<ul>
+										<li><img src="frontend/images/payments/visa.jpg" alt="Visa card"></li>
+										<li><img src="frontend/images/payments/master.jpg" alt="Master card"></li>
+										<li><img src="frontend/images/payments/mada.jpg" alt="Mada"></li>
+										<li><img src="frontend/images/payments/sadad.jpg" alt="Sadad"></li>
+										<li><img src="frontend/images/payments/cash.jpg" alt="Cash on delevery"></li>
+									</ul>
+								</div>									
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-8 col-lg-5 xxs-mb-60 sm-mb-0">
+							<nav class="footer-nav">
+								<div class="col-md-6">
+									<h2>الاقسام الشائعة</h2>
+									<ul class="nav">
+										<li>
+											<a href="#">الجوالات</a>
+										</li>
+										<li>
+											<a href="#">الكمبيوتر</a>
+										</li>
+										<li>
+											<a href="#">الموضة</a>
+										</li>
+										<li>
+											<a href="#">الساعات</a>
+										</li>
+										<li>
+											<a href="#">الصحة والجمال</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6">
+									<h2>من نحن</h2>
+									<ul class="nav">
+										<li>
+											<a href="#">شروط الإستخدام</a>
+										</li>
+										<li>
+											<a href="#">العضويات</a>
+										</li>
+										<li>
+											<a href="#">اتفاقية المتاجر</a>
+										</li>
+										<li>
+											<a href="#">الدعم الفني</a>
+										</li>
+									</ul>
+								</div>
+							</nav>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+							<div class="app-widget">
+								<h2>حمل تطبيق شاري</h2>
+								<p>لتجربة تسوق اكثر سهولة ومتعة حمل تطبيق شاري الان على جوجل بلاي و ابل ستور</p>
+								<div class="stores-buttons">
+									<a href="https://play.google.com/store/apps/details?id=com.Bdwey.Shari" class="btn btn-play" target="_blank">
+										<i class="btn-img"></i>
+										<span>Google play</span>
+									</a>
+									<a href="https://itunes.apple.com/us/app/منصة-شاري/id1302836279" class="btn btn-apple" target="_blank">
+										<i class="btn-img"></i>
+										<span>App Store</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-low">
+					<span class="display-inline-block">جميع الحقوق محفوظة لسنة 2017 - 2018</span>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<script src="frontend/scripts/vendor.js"></script>
+	<script src="frontend/scripts/plugins.js"></script>
+	<script src="production.js"></script>
+	<script src="extend/swiper/swiper.min.js"></script>
+	<script src="extend/extend.js"></script>
+
+	<script type="text/javascript">
+		if (parent) {
+			window.parent.postMessage({ height: document.body.scrollHeight }, '*');
+		}
+	</script>
+	<script>
+		$(document).ready(function () {
+			$("img.lazy").lazyload();
+
+			$('.infinite-scroll ul.pagination').hide();
+			$(function () {
+				$('.infinite-scroll').jscroll({
+					autoTrigger: true,
+					loadingHtml: "<div class = 'loading-wrapper'><div class='loading'></div></div>",
+					loadingFunction: function () {
+						$('.infinite-scroll .jscroll-next-parent').show();
+					},
+					padding: -50,
+					//nextSelector: '.pagination li.active + li a',
+					nextSelector: '.loadInfinit',
+					contentSelector: 'div.infinite-scroll',
+					callback: function () {
+						$("img.lazy").lazyload();
+						$('.infinite-scroll ul.pagination').remove();
+					}
+				});
+			});
+
+
+			$('.table-scroll-pag ul.pagination').hide();
+			$(function () {
+				$('.table-scroll-pag').jscroll({
+					autoTrigger: true,
+					loadingHtml: "<div class = 'loading-wrapper'><div class='loading'></div></div>",
+					loadingFunction: function () {
+						$('.table-scroll-pag .jscroll-next-parent').show();
+					},
+					padding: -150,
+					// nextSelector: '.pagination li.active + li a',
+					nextSelector: '.loadInfinitTable',
+					contentSelector: 'div.table-scroll-pag',
+					callback: function () {
+						// $('.table-scroll-pag ul.pagination').parents("tr").remove();
+						$('.table-scroll-pag ul.pagination').remove();
+						$(".table-scroll-pag tbody").append($(".jscroll-added tbody").html());
+						$(".table-scroll-pag .jscroll-added .table-responsive").remove();
+					}
+				});
+			});
+		});
+		$(document).on("click", ".confirm-click-item", function (event) {
+			var $this = $(this);
+			swal({
+				title: "",
+				text: "هل انت متأكد؟",
+				type: "warning",
+				showCancelButton: true,
+				confirmButtonColor: "#DD6B55",
+				confirmButtonText: "موافق",
+				cancelButtonText: "إلغاء",
+				closeOnConfirm: false
+			}
+
+			).then(function () {
+				location.href = $this.attr("href");
+			});
+			event.preventDefault();
+		});
+	</script>
+</body>
+
+</html>

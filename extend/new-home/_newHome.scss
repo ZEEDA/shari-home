@@ -1,6 +1,6 @@
 :root{
     --primary       : #650c44;
-    --header-bg     : #89105d; //lighten(#650c44, 8%)
+    --header-bg     : #650c44; //lighten(#650c44, 8%)
     --dark-primary  : #4D0030;
     --secondary     : #b50389;
     --bg-light      : #f0f0f0;
@@ -14,6 +14,7 @@
 @import "_mainIcons";
 @import "_slides";
 @import "_homeContent";
+@import "_typo";
 @import "_footer";
 
 @import "_swiper.scss";

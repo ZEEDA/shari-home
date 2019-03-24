@@ -1,0 +1,181 @@
+.typography{
+    float: none;
+    padding: 16px;
+    text-align: right;
+    background-color: #fff;
+    color: #1d3944;
+    max-width: 750px;
+    margin: 56px auto;
+    a{
+        color: var(--primary);
+    }
+    .inner-container{
+        margin: 0;
+        padding: 0;
+    }    
+    h1{
+        margin: 0 auto 50px;
+        font-weight: 300;
+        padding-bottom: 22px;
+        position: relative;
+        &:after{
+            content: " ";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 1px;
+            border-bottom: 1px solid var(--secondary);
+        }
+    } 
+    h2{
+        margin-top: 32px;
+        margin-bottom: 16px;
+        position: relative;
+        padding: 8px 0 8px 12px;
+        // background-color: #f0f0f0;
+        border-radius: 4px 4px 0 0;
+        &:before{
+            content: " ";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 30px;
+            height: 1px;
+            border-bottom: 1px solid var(--secondary);
+        }
+    } 
+    h3, h4, h5, h6{
+        font-weight: 600;
+    }
+    h1{
+        font-size: 32px;
+        text-align: center;
+    }
+    h2{
+        font-size: 24px;
+    }
+    h3{
+        // font-size: 1rem;
+        line-height: 23px;
+    }
+
+    p{
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 0;
+        margin-bottom: 16px;
+        color: #464646;
+        strong{
+            font-weight: 600;
+            // font-size: 0.875rem;
+        }
+    }
+    li{
+        p{
+            margin-bottom: 16px;
+            // margin-bottom: 0;
+        }
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+        margin-bottom: 32px;
+        > li{
+            position: relative;
+            padding-right: 40px;
+            &:before{
+                content: "";
+                width: 16px;
+                height: 16px;
+
+                background-image: url('/assets/images/icon.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+
+                position: absolute;
+                right: 16px;
+            }
+            ul{
+                list-style: initial;
+                padding-right: 40px;
+                margin-bottom: 0;
+                > li{
+                    padding-right: 0;
+                    &:before{
+                        content: none;
+                    }
+                }
+            }
+        }
+    }
+    blockquote{
+        font-style: italic;
+        color: #1d3944;
+        margin: 32px 40px;
+        font-size: 1rem;
+        &:before {
+            content: "";
+            width: 28px;
+            height: 20px;
+            display: inline-block;
+            font-size: 28px;
+            margin-left: 5px;
+    
+            background-image: url('/assets/images/quote.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+    
+            opacity: 0.2;
+            transform: rotate(180deg) rotateY(180deg);
+            
+            position: relative;
+            top: -5px;
+        }
+    }
+    img{
+        width: auto;
+        max-width: 100%;
+        margin: 16px auto;
+    }
+    strong{
+        font-weight: 700;
+        font-size: 16px;
+    }
+    &.ltr{
+        direction: ltr;
+        text-align: left;
+        ul {
+            > li {
+                padding-right: 0;
+                padding-left: 40px;
+                &:before{
+                    left: 16px;
+                    right: auto;
+                }
+            }
+        }
+    }
+    ol{
+        li{
+            p{
+                margin-bottom: 8px;
+                font-weight: 700;
+                font-size: 18px;
+            }
+            ol {
+                li p{
+                    font-weight: 500;
+                    font-size: 14px;
+                }
+                ol li p{
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
