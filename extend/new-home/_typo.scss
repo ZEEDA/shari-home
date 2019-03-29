@@ -87,16 +87,17 @@
             padding-right: 40px;
             &:before{
                 content: "";
-                width: 16px;
-                height: 16px;
+                width: 22px;
+                height: 22px;
 
-                background-image: url('/assets/images/icon.png');
+                background-image: url('/frontend/images/marker.png');
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: contain;
 
                 position: absolute;
-                right: 16px;
+                right: 12px;
+                top: 2px;
             }
             ul{
                 list-style: initial;
@@ -159,16 +160,20 @@
             }
         }
     }
+    // p{
+    //     font-size: 16px;
+    //     line-height: 23px;
+    // }
     ol{
         li{
             p{
                 margin-bottom: 8px;
-                font-weight: 700;
-                font-size: 18px;
+                font-weight: 400;
+                font-size: 14px;
             }
             ol {
                 li p{
-                    font-weight: 500;
+                    font-weight: 400;
                     font-size: 14px;
                 }
                 ol li p{
@@ -176,6 +181,24 @@
                     font-size: 14px;
                 }
             }
+        }
+    }
+    table{
+        border: 1px solid #ddd;
+        text-align: right;
+        margin-top: 16px ;
+        margin-bottom: 16px;
+        p{
+            margin: 0!important;
+        }
+        th{
+            background-color: #eee;
+            border: 1px solid #ddd;
+            padding: 4px 12px;
+        }
+        td{
+            border: 1px solid #ddd;
+            padding: 4px 12px;
         }
     }
     @media (max-width: 500px) {

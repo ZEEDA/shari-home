@@ -55,14 +55,20 @@ section{
 .packages{
     padding: 0 16px;
 }
+// .products-list {
+//     margin: 32px auto;
+// }
 .advantages{
+    table{
+        border: 1px solid #ddd;
+    }
     th{
         text-align: center;
         background-color: #eee;
     }
 }
 .jumbo-header{
-    background: url('../frontend/images/puzzle.jpg');
+    background: url('/frontend/images/puzzle.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
